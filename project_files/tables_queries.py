@@ -1,5 +1,5 @@
 
-#Query to create the tabe stations
+#Command to create the tabe stations
 CREATE_STATIONS_TABLE = """
 CREATE TABLE IF NOT EXISTS stations (
     id_estacao INTEGER PRIMARY KEY,
@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS stations (
 """
 
 
-#Query to create the stations table
+#Command to create the stations table
 CREATE_OBSERVATIONS_TABLE = """
 CREATE TABLE IF NOT EXISTS observations (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -29,42 +29,42 @@ CREATE TABLE IF NOT EXISTS observations (
 """
 
 
-#Query to insert data into stations table
+#Command to insert data into stations table
 INSERT_STATIONS_DATA = """
 INSERT OR REPLACE INTO stations(id_estacao, longitude, latitude, local_estacao)
 VALUES (?, ?, ?, ?)
 """
 
 
-#Query to insert data into observations table
+#Command to insert data into observations table
 INSERT_OBSERVATIONS_TABLE = """
 INSERT INTO observations(date, id_estacao, intensidade_de_vento_km, temperatura, radiacao, id_direcc_vento, prec_acumulada, intensidade_de_vento, humidade, pressao)
 VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 """
 
 
-#Query to add a column 'dicofre' into the stations table
+#Command to add a column 'dicofre' into the stations table
 ADD_DICOFRE_COLUMN = """
 ALTER TABLE stations
 ADD COLUMN dicofre REAL;
 """
 
 
-#Query to add a column 'dicofre' into the stations table
+#Command to add a column 'dicofre' into the stations table
 ADD_CONCELHO_COLUMN = """
 ALTER TABLE stations
 ADD COLUMN concelho TEXT;
 """
 
 
-#Query to remove a column 'dicofre' into the stations table
+#Command to remove a column 'dicofre' into the stations table
 DROP_DICOFRE_COLUMN = """
 ALTER TABLE stations
 DROP COLUMN dicofre;
 """
 
 
-#Query to remove a column 'dicofre' into the stations table
+#Command to remove a column 'dicofre' into the stations table
 DROP_CONCELHO_COLUMN = """
 ALTER TABLE stations
 DROP COLUMN concelho;
