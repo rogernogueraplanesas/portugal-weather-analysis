@@ -43,93 +43,90 @@ VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 """
 
 
-#Add dicofre and concelho columns in table 'stations'
-def add_columns(database):
-    cursor = database.cursor()
-    cursor.execute("""
-                ALTER TABLE stations
-                ADD COLUMN dicofre REAL;
-                """)
-    cursor.execute("""
-                   ALTER TABLE stations
-                   ADD COLUMN concelho TEXT;
-                   """)
+#Query to add a column 'dicofre' into the stations table
+ADD_DICOFRE_COLUMN = """
+ALTER TABLE stations
+ADD COLUMN dicofre REAL;
+"""
 
-#Delete dicofre and concelho columns in table 'stations'
-def remove_colums(database):
-    cursor = database.cursor()
-    cursor.execute("""
-                   ALTER TABLE stations
-                   DROP COLUMN dicofre
-                   """)
-    cursor.execute("""
-                   ALTER TABLE stations
-                   DROP COLUMN concelho
-                   """)
 
-#Retrieving and fetching data from tables in function of the year
-def yearly_windspeed_direction(database):
-    cursor = database.cursor()
-    cursor.execute("""
-    SELECT strftime('%Y', o.date) as year,
-        s.id_estacao,
-        CAST(s.dicofre AS INTEGER) as dicofre,
-        s.concelho,
-        CASE
-                   WHEN o.id_direcc_vento IN (1, 9) THEN 1.0
-                   ELSE o.id_direcc_vento
-        END AS direcc_vento,
-        MIN(o.intensidade_de_vento) as min_int_vento,
-        MAX(o.intensidade_de_vento) as max_int_vento,
-        ROUND(AVG(o.intensidade_de_vento), 2) as avg_int_vento
-    FROM observations o
-    INNER JOIN stations s ON o.id_estacao = s.id_estacao
-    WHERE o.intensidade_de_vento != -99 AND o.id_direcc_vento != 0
-    GROUP BY year, dicofre, direcc_vento;
-    """)
-    return cursor.fetchall()
+#Query to add a column 'dicofre' into the stations table
+ADD_CONCELHO_COLUMN = """
+ALTER TABLE stations
+ADD COLUMN concelho TEXT;
+"""
 
-#Retrieving and fetching data from tables in function of the month
-def monthly_windspeed_direction(database):
-    cursor = database.cursor()
-    cursor.execute("""
-    SELECT strftime('%m', o.date) as month,
-        s.id_estacao,
-        CAST(s.dicofre AS INTEGER) as dicofre,
-        s.concelho,
-        CASE
-                   WHEN o.id_direcc_vento IN (1, 9) THEN 1.0
-                   ELSE o.id_direcc_vento
-        END AS direcc_vento,
-        MIN(o.intensidade_de_vento) as min_int_vento,
-        MAX(o.intensidade_de_vento) as max_int_vento,
-        ROUND(AVG(o.intensidade_de_vento), 2) as avg_int_vento
-    FROM observations o
-    INNER JOIN stations s ON o.id_estacao = s.id_estacao
-    WHERE o.intensidade_de_vento != -99 AND o.id_direcc_vento != 0
-    GROUP BY month, dicofre, direcc_vento;
-    """)
-    return cursor.fetchall()
 
-#Retrieving and fetching data from tables in function of the month and year
-def month_year_windspeed_direction(database):
-    cursor = database.cursor()
-    cursor.execute("""
-    SELECT strftime('%m', o.date) as month,
-        strftime('%Y', o.date) as year,
-        s.id_estacao,
-        CAST(s.dicofre AS INTEGER) as dicofre,
-        s.concelho,
-        CASE
-                   WHEN o.id_direcc_vento IN (1, 9) THEN 1.0
-                   ELSE o.id_direcc_vento
-        END AS direcc_vento,
-        MIN(o.intensidade_de_vento) as min_int_vento,
-        MAX(o.intensidade_de_vento) as max_int_vento,
-        ROUND(AVG(o.intensidade_de_vento), 2) as avg_int_vento
-    FROM observations o
-    INNER JOIN stations s ON o.id_estacao = s.id_estacao
-    WHERE o.intensidade_de_vento != -99 AND o.id_direcc_vento != 0
-    GROUP BY month, year, dicofre, direcc_vento;
-    """)
-    return cursor.fetchall()
+#Query to remove a column 'dicofre' into the stations table
+DROP_DICOFRE_COLUMN = """
+ALTER TABLE stations
+DROP COLUMN dicofre;
+"""
+
+
+#Query to remove a column 'dicofre' into the stations table
+DROP_CONCELHO_COLUMN = """
+ALTER TABLE stations
+DROP COLUMN concelho;
+"""
+
+
+#Query to get yearly windspeed and direction data
+YEARLY_WINDSPEED_DIRECTION = """
+SELECT strftime('%Y', o.date) as year,
+    s.id_estacao,
+    CAST(s.dicofre AS INTEGER) as dicofre,
+    s.concelho,
+    CASE
+                WHEN o.id_direcc_vento IN (1, 9) THEN 1.0
+                ELSE o.id_direcc_vento
+    END AS direcc_vento,
+    MIN(o.intensidade_de_vento) as min_int_vento,
+    MAX(o.intensidade_de_vento) as max_int_vento,
+    ROUND(AVG(o.intensidade_de_vento), 2) as avg_int_vento
+FROM observations o
+INNER JOIN stations s ON o.id_estacao = s.id_estacao
+WHERE o.intensidade_de_vento != -99 AND o.id_direcc_vento != 0
+GROUP BY year, dicofre, direcc_vento;
+"""
+
+
+#Query to get monthly windspeed and direction data
+MONTHLY_WINDSPEED_DIRECTION = """
+SELECT strftime('%m', o.date) as month,
+    s.id_estacao,
+    CAST(s.dicofre AS INTEGER) as dicofre,
+    s.concelho,
+    CASE
+                WHEN o.id_direcc_vento IN (1, 9) THEN 1.0
+                ELSE o.id_direcc_vento
+    END AS direcc_vento,
+    MIN(o.intensidade_de_vento) as min_int_vento,
+    MAX(o.intensidade_de_vento) as max_int_vento,
+    ROUND(AVG(o.intensidade_de_vento), 2) as avg_int_vento
+FROM observations o
+INNER JOIN stations s ON o.id_estacao = s.id_estacao
+WHERE o.intensidade_de_vento != -99 AND o.id_direcc_vento != 0
+GROUP BY month, dicofre, direcc_vento;
+"""
+
+
+#Query to get yearly+monthly windspeed and direction data
+YEAR_MONTH_WINDSPEED_DIRECTION = """
+SELECT strftime('%m', o.date) as month,
+    strftime('%Y', o.date) as year,
+    s.id_estacao,
+    CAST(s.dicofre AS INTEGER) as dicofre,
+    s.concelho,
+    CASE
+                WHEN o.id_direcc_vento IN (1, 9) THEN 1.0
+                ELSE o.id_direcc_vento
+    END AS direcc_vento,
+    MIN(o.intensidade_de_vento) as min_int_vento,
+    MAX(o.intensidade_de_vento) as max_int_vento,
+    ROUND(AVG(o.intensidade_de_vento), 2) as avg_int_vento
+FROM observations o
+INNER JOIN stations s ON o.id_estacao = s.id_estacao
+WHERE o.intensidade_de_vento != -99 AND o.id_direcc_vento != 0
+GROUP BY month, year, dicofre, direcc_vento;
+"""

@@ -1,14 +1,13 @@
 import os
 import pandas as pd
-from windrose import WindroseAxes
 import matplotlib.pyplot as plt
 import numpy as np
 
 
-#____________________________________________________________YEARLY WINDROSES________________________________________________________________________
+#________________________________________________________________________YEARLY WINDROSES________________________________________________________________________
 
 def create_yearly_windrose():
-    # Update the file path with the full path
+
     file_path = "csv_files\\windrose_csv_data\\wind_data_yearly.csv"
 
     # Read the CSV data using the updated file path
@@ -96,10 +95,10 @@ def create_yearly_windrose():
         plt.close(fig)
 
 
-#____________________________________________________________MONTHLY WINDROSES________________________________________________________________________
+#________________________________________________________________________MONTHLY WINDROSES________________________________________________________________________
 
 def create_monthly_windrose():
-    # Update the file path with the full path
+
     file_path = "csv_files\\windrose_csv_data\\wind_data_monthly.csv"
 
     # Read the CSV data using the updated file path
@@ -202,10 +201,10 @@ def create_monthly_windrose():
         plt.savefig(os.path.join('month_windroses', file_name), dpi=300, bbox_inches='tight', pad_inches=0.1)
         plt.close(fig)
 
-#____________________________________________________________YEAR AND MONTH WINDROSES________________________________________________________________________
+#________________________________________________________________________YEAR AND MONTH WINDROSES________________________________________________________________________
 
 def create_year_month_windrose():
-    # Update the file path with the full path
+
     file_path = "csv_files\\windrose_csv_data\\wind_data_year_month.csv"
 
     # Read the CSV data using the updated file path
@@ -313,10 +312,11 @@ def create_year_month_windrose():
 
 
 
-#__________________________________________WINDROSE TESTING__________________________________________________
+#________________________________________________________________________WINDROSE TESTING________________________________________________________________________
 
 def create_test_windrose():
-    # Update the file path with the full path
+
+    # Path to a shortened CSV file to test the code before processing the final CSV files
     file_path = "csv_files\\windrose_csv_data\\windrose_test.csv"
 
     # Read the CSV data using the updated file path
