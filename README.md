@@ -31,6 +31,7 @@ All the JSON files were processed, and the main data extracted from them was ins
   <br>
   <sub>Stations table structure</sub>
 </div>
+<br>
 <br> 
 <div align="center">
   <img src="sample_images/observations_table.png" width="80%" height="80%" alt="Observations table">
