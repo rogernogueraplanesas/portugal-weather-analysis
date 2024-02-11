@@ -90,7 +90,7 @@ Two new columns were created, and the values for the concelho and dicofre per st
 By means of an inner join, data from both stations and observations table is retrieved in order to collect the required information needed to plot windroses per concelho on a yearly, monthly, and yearly + monthly basis.
 An example of a query written to obtain yearly wind data is shown next:
 
-```
+```ruby
 YEARLY_WINDSPEED_DIRECTION = """
 SELECT strftime('%Y', o.date) as year,
     s.id_estacao,
