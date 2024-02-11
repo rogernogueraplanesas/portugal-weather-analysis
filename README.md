@@ -27,4 +27,6 @@ All the JSON files were processed, and the main data extracted from them was ins
 <p align="center">
 <img src="sample_images/stations_table.png" width=40% height=40%>
 </p>
-<h1 align="center">Stations table structure</h1>
+<div style='text-align: center;'>
+  Stations table structure
+</div>
