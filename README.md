@@ -25,13 +25,13 @@ The table containing stations' data was named `stations` and the one containing 
 All the JSON files were processed, and the main data extracted from them was inserted into each corresponding table.
 <br>
 <div align="center">
-  <img src="sample_images/stations_table.png" width="40%" height="40%" alt="Stations table">
+  <img src="sample_images/stations_table.png" width="35%" height="35%" alt="Stations table">
   <br>
   <sub>Stations table structure</sub>
 </div>
 <br> 
 <div align="center">
-  <img src="sample_images/observations_table.png" width="70%" height="70%" alt="Observations table">
+  <img src="sample_images/observations_table.png" width="75%" height="75%" alt="Observations table">
   <br> 
   <sub>Observations table structure</sub>
 </div>
