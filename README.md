@@ -28,8 +28,9 @@ All the JSON files were processed, and the main data extracted from them was ins
 <br>
 <div align="center">
   <img src="sample_images/stations_table.png" width="35%" height="35%" alt="Stations table">
+  <br>
+  <sub>Stations table structure</sub>
 </div>
-Here is a simple footnote[^1]
 <br> 
 <div align="center">
   <img src="sample_images/observations_table.png" width="80%" height="80%" alt="Observations table">
