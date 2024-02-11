@@ -1,5 +1,4 @@
 import sqlite3
-import tables_queries as tq
 import functions as f
 import settings as s
 import qgis_data_cleaning as qgis
@@ -67,7 +66,7 @@ def create_windroses():
     wr.create_year_month_windrose()
     wr.create_test_windrose()
 
-#________________________________________________________________________________________________________________________________________________________________
+#______________________________________________________   MAIN   ______________________________________________________
 
 if __name__=="__main__":
     database = sqlite3.connect("weather.db")
