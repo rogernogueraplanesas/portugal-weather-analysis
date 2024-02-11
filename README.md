@@ -92,7 +92,7 @@ Two new columns were created, and the values for the concelho and dicofre per st
 <br>
 
 ### Retrieving wind data and plotting the final windroses
-By means of an inner join, data from both stations and observations table is retrieved in order to collect the required information needed to plot windroses per concelho on a yearly, monthly, and yearly + monthly basis.
+By means of an inner join, data from both stations and observations table is retrieved in order to collect the required information needed to plot windroses per concelho on a yearly, monthly, and yearly + monthly basis.<br>
 An example of a query written to obtain yearly wind data is shown next:
 
 ```ruby
@@ -136,4 +136,4 @@ The resultant windroses presented the following appearance:
 > Given the significant difference in wind speed values between the maximum and the minimum, there may be windroses where it can be difficult to distinguish the minimum wind speed value due to the scale.
 <br>
 
-### atlas
+### Atlas maps
