@@ -109,3 +109,11 @@ WHERE o.intensidade_de_vento != -99 AND o.id_direcc_vento != 0
 GROUP BY year, dicofre, direcc_vento;
 """
 ```
+
+As seen in the code block above, the wind direction (id_direcc_vento) is represented with a specific code. Moreover, all the windspeed (intensidade_de_vento) presenting a value of -99 is treated as an error and not taken into account.
+
+For the final windroses, _pandas_, _matplotlib_ and _numpy_ were used.
+The values for the wind direction were transformed into degrees by applying a mapping.
+
+
+The resultant windroses presented the following appearance:
