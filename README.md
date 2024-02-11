@@ -24,4 +24,4 @@ The table containing stations' data was named `stations` and the one containing 
 
 All the JSON files were processed, and the main data extracted from them was inserted into each corresponding table.
 
-![stations_table](sample_images/stations_table.png)
+<img src="sample_images/stations_table.png" width=50% height=50%>
