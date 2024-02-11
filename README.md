@@ -77,10 +77,35 @@ Once imported, the points layer information (stations' data) and the multipolygo
 
 > [!WARNING]
 > It is important to select UTF-8 as encoding type when importing and exporting the CSV files from QGIS.
+<br>
 
-
-### Clean and insert QGIS information into the database
+### Cleaning and inserting QGIS information into the database
 The CSV file exported from QGIS had many information related to the weather stations; not all of it had to be used. In fact, only the id_estacao (station id), the concelho, and the dicofre values for each station were needed.
 Although the id_estacao value was already present in the stations table, its condition of **PRIMARY KEY** was needed for the proper insertion of the concelho and dicofre values per station.
 
 Two new columns were created, and the values for the concelho and dicofre per station were inserted based on each id_estacao. Now both tables in the database were totally complete.
+<br>
+
+### Retrieving wind data and plotting the final windroses
+By means of an inner join, data from both stations and observations table is retrieved in order to collect the required information needed to plot windroses per concelho on a yearly, monthly, and yearly + monthly basis.
+An example of a query written to obtain yearly wind data is shown next:
+
+```
+YEARLY_WINDSPEED_DIRECTION = """
+SELECT strftime('%Y', o.date) as year,
+    s.id_estacao,
+    CAST(s.dicofre AS INTEGER) as dicofre,
+    s.concelho,
+    CASE
+                WHEN o.id_direcc_vento IN (1, 9) THEN 1.0
+                ELSE o.id_direcc_vento
+    END AS direcc_vento,
+    MIN(o.intensidade_de_vento) as min_int_vento,
+    MAX(o.intensidade_de_vento) as max_int_vento,
+    ROUND(AVG(o.intensidade_de_vento), 2) as avg_int_vento
+FROM observations o
+INNER JOIN stations s ON o.id_estacao = s.id_estacao
+WHERE o.intensidade_de_vento != -99 AND o.id_direcc_vento != 0
+GROUP BY year, dicofre, direcc_vento;
+"""
+```
