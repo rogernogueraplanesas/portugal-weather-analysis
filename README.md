@@ -126,3 +126,6 @@ The resultant windroses presented the following appearance:
   <sub>Lisboa 2018 windrose</sub>
 </div>
 <br>
+
+> [!NOTE]
+> Given the significant difference in wind speed values between the maximum and the minimum, there may be windroses where it can be difficult to distinguish the minimum wind speed value due to the scale.
