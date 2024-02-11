@@ -61,7 +61,7 @@ For each station, one point would be represented on the map according to their c
 
 <br>
 <div align="center">
-  <img src="sample_images/weather_stations.png" width="35%" height="35%" alt="Stations location in QGIS">
+  <img src="sample_images/weather_stations.png" width="40%" height="40%" alt="Stations location in QGIS">
   <br>
   <sub>Weather stations location</sub>
 </div>
