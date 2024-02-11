@@ -77,3 +77,10 @@ Once imported, the points layer information (stations' data) and the multipolygo
 
 > [!WARNING]
 > It is important to select UTF-8 as encoding type when importing and exporting the CSV files from QGIS.
+<br>
+
+### Clean and insert QGIS information into the database
+The CSV file exported from QGIS had many information related to the weather stations; not all of it had to be used. In fact, only the id_estacao (station id), the concelho, and the dicofre values for each station were needed.
+Although the id_estacao value was already present in the stations table, its condition of **PRIMARY KEY** was needed for the proper insertion of the concelho and dicofre values per station.
+
+Two new columns were created, and the values for the concelho and dicofre per station were inserted based on each id_estacao. Now both tables in the database were totally complete.
