@@ -26,14 +26,14 @@ All the JSON files were processed, and the main data extracted from them was ins
 
 
 <br>
-<div align="center" style="margin-bottom: 0.25em;">
+<div align="center">
   <img src="sample_images/stations_table.png" width="35%" height="35%" alt="Stations table">
-  <br>
+  <br style="margin-bottom: 0.25em;">
   <sub>Stations table structure</sub>
 </div>
 <br> 
 <div align="center">
   <img src="sample_images/observations_table.png" width="80%" height="80%" alt="Observations table">
-  <br>
+  <br style="margin-bottom: 0.25em;">
   <sub>Observations table structure</sub>
 </div>
