@@ -28,7 +28,7 @@ All the JSON files were processed, and the main data extracted from them was ins
 <br>
 <div align="center">
   <img src="sample_images/stations_table.png" width="35%" height="35%" alt="Stations table">
-  <br style="margin-bottom: 0.25em;">
+  <br>
   <sub>Stations table structure</sub>
 </div>
 <br> 
