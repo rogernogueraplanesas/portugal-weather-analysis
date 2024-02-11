@@ -14,7 +14,7 @@ For this project, multiple files in **JSON** format (1.42 GB) containing climate
 - Data from 2018 and 2023 is not complete for the entire year, given the project's duration. Therefore, while it was utilized for monthly historical analysis, it was not represented on a yearly basis.
 
 ## Project Organization
-The project has been divided into seven distinct steps.
+The project can be divided into seven distinct steps.
 
 ### Database structuring, and preliminary data insertion
 The datasource consists of several JSON files divided into two main groups: one containing data related to the involved Portuguese weather stations, and the other containing data related to hourly observations made by the weather stations between 2018 and 2022.
@@ -40,4 +40,7 @@ All the JSON files were processed, and the main data extracted from them was ins
 </div>
 <br>
 
-### Stations data exportation into QGIS
+### Exporting station data into QGIS
+With both tables filled out with data from the data source, there are two more key parameters missing. Despite having data regarding the stations and their readings, there is no column assigned to the location of the weather stations, except for the coordinates themselves.
+
+For this project, it is crucial to locate the stations in a specific 'concelho' (municipality) with their respective 'dicofre' numbers (zip code numbers). The final windroses will be created in function of the 'concelhos' found in Portugal. The dicofre number is a key value for organizational purposes, as the resulting windrose files must contain the dicofre value in their name.
