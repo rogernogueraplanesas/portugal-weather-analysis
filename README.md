@@ -24,8 +24,7 @@ The table containing stations' data was named `stations` and the one containing 
 
 All the JSON files were processed, and the main data extracted from them was inserted into each corresponding table.
 
-
-<div align="center">
+<div align="center" style="margin-top: 10px; margin-bottom: 10px;">
   <img src="sample_images/stations_table.png" width="40%" height="40%" alt="Stations table">
   <br>
   <sub>Stations table structure</sub>
