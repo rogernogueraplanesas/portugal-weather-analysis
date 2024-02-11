@@ -70,3 +70,10 @@ For each station, one point would be represented on the map according to their c
 <br>
 
 Once imported, the points layer information (stations' data) and the multipolygon information could be merged by means of the 'intersection' tool from QGIS, which intersects two selected layers, creating a new one containing all the data. This new layer was then exported as a new CSV file to work with.
+
+> [!NOTE]
+> Both the multipolygonal layers and the imported points layer were using the `EPSG:4326 - WGS 84` Coordinate Reference System (CRS).
+
+
+> [!WARNING]
+> It is important to select UTF-8 as encoding type when importing and exporting the CSV files from QGIS.
