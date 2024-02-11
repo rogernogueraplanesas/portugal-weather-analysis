@@ -52,6 +52,7 @@ QGIS is involved in the relational part, where each station gets a concelho and 
 All the data inside the stations' table was retrieved and fetched into a CSV file that had to be imported into QGIS.
 <br>
 
+
 ### QGIS layers intersection
 An already existing QGIS project was used as a base to import the stations' data.
 The QGIS project had multipolygon layers imitating each of the concelhos found in Portugal (mainland and islands), covering the total area of the country.
