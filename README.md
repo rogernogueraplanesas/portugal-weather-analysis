@@ -37,6 +37,6 @@ All the JSON files were processed, and the main data extracted from them was ins
   <br style="margin-bottom: 0.25em;">
   <sub>Observations table structure</sub>
 </div>
-
+<br>
 
 ### Stations data exportation for QGIS
