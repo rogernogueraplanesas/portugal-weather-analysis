@@ -4,14 +4,13 @@ Wind Roses per municipality for Historical Hourly Wind Records of Mainland Portu
 <br>
 
 ## Objective Summary
-For this project, multiple files in **JSON** format (1.42 GB) containing climate data from different weather stations in Portugal (Mainland and Islands) were cleaned, formatted, and transformed into **CSV** files in order to create proper wind roses per municipality on a yearly, monthly, and yearly + monthly basis.
+For this project, multiple files in **JSON** format (1.42 GB) containing climate data from different weather stations in Portugal (Mainland and Islands) were cleaned, formatted, and transformed into **CSV** files in order to create proper wind roses per municipality on a yearly, monthly, and yearly + monthly basis. A set of Atlas maps were created using the final wind roses.
 
 > An SQLite database is created in order to store all the processed data in a practical way to check and re-use it.
 
-> QGIS software is used in this project.<br>
-> Also known as Quantum GIS, is a geographic information system (GIS) software. More information can be found [here](https://qgis.org/en/site/about/index.html).<br>
-> It takes part in several steps, such as providing complementary data in function of the geolocation of each weather station as well as creating the final Atlas maps from the resulting wind roses.
-<br>
+> QGIS software is used throughout this project.<br>
+> Also known as Quantum GIS, QGIS is a geographic information system (GIS) software. More information can be found [here](https://qgis.org/en/site/about/index.html).<br>
+
 
 ## Project Assumptions
 - All partially incomplete records are treated as corrupt and disregarded.
