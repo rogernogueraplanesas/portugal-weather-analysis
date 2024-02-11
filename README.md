@@ -85,6 +85,7 @@ Although the id_estacao value was already present in the stations table, its con
 
 Two new columns were created, and the values for the concelho and dicofre per station were inserted based on each id_estacao. Now both tables in the database were totally complete.
 <br>
+<br>
 
 ### Retrieving wind data and plotting the final windroses
 By means of an inner join, data from both stations and observations table is retrieved in order to collect the required information needed to plot windroses per concelho on a yearly, monthly, and yearly + monthly basis.
