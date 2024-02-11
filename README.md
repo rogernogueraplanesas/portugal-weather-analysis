@@ -8,8 +8,8 @@ For this project, multiple files in **JSON** format (1.42 GB) containing climate
 
 > An SQLite database is created in order to store all the processed data in a practical way to check and re-use it.
 
-> QGIS software is used in this project. > Also known as Quantum GIS, is a geographic information system (GIS) software.
-> More information can be found [here](https://qgis.org/en/site/about/index.html)
+> QGIS software is used in this project.<br>
+> Also known as Quantum GIS, is a geographic information system (GIS) software. More information can be found [here](https://qgis.org/en/site/about/index.html)
 > It takes part in several steps, such as providing complementary data in function of the geolocation of each weather station as well as creating the final Atlas maps from the resulting wind roses.
 <br>
 
