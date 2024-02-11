@@ -39,4 +39,4 @@ All the JSON files were processed, and the main data extracted from them was ins
 </div>
 <br>
 
-### Stations data exportation for QGIS
+### Stations data exportation into QGIS
