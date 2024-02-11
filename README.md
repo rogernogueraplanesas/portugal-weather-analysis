@@ -22,7 +22,6 @@ For this project, multiple files in **JSON** format (1.42 GB) containing climate
 ## Project Organization
 The project can be divided into seven distinct steps.
 <br>
-<br>
 
 ### Database structuring, and preliminary data insertion
 The datasource consists of several JSON files divided into two main groups: one containing data related to the involved Portuguese weather stations, and the other containing data related to hourly observations made by the weather stations between 2018 and 2022.
@@ -46,7 +45,7 @@ All the JSON files were processed, and the main data extracted from them was ins
   <br style="margin-bottom: 0.25em;">
   <sub>Observations table structure</sub>
 </div>
-<br>
+
 
 ### Exporting stations' data into QGIS
 With both tables filled out with data from the data source, there were two more key parameters missing. Despite having data regarding the stations and their readings, there was no column assigned to the location of the weather stations, except for the coordinates themselves.
