@@ -126,7 +126,7 @@ The resultant windroses presented the following appearance:
 
 <br>
 <div align="center">
-  <img src="sample_images/1106_Lisboa_2018.png" width="50%" height="50%" alt="Lisboa 2018 yearly windrose">
+  <img src="sample_images/1106_Lisboa_2018.png" width="45%" height="45%" alt="Lisboa 2018 yearly windrose">
   <br>
   <sub>Lisboa 2018 windrose</sub>
 </div>
