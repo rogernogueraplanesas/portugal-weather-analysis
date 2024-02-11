@@ -43,10 +43,22 @@ All the JSON files were processed, and the main data extracted from them was ins
 <br>
 
 ### Exporting stations' data into QGIS
-With both tables filled out with data from the data source, there are two more key parameters missing. Despite having data regarding the stations and their readings, there is no column assigned to the location of the weather stations, except for the coordinates themselves.
+With both tables filled out with data from the data source, there were two more key parameters missing. Despite having data regarding the stations and their readings, there was no column assigned to the location of the weather stations, except for the coordinates themselves.
 
-For this project, it is crucial to locate the stations in a specific *'concelho'* (municipality) with their respective *'dicofre'* numbers (zip code numbers). The final windroses will be created based on each concelho found in Portugal. The dicofre number is a key value for organizational purposes, as the resulting windrose files must contain the dicofre value in their name.
+For this project, it was crucial to locate the stations in a specific *'concelho'* (municipality) with their respective *'dicofre'* numbers (zip code numbers). The final windroses are created based on each concelho found in Portugal. The dicofre number is a key value for organizational purposes, as the resulting windrose files must contain the dicofre value in their name.
 
 QGIS is involved in the relational part, where each station gets a concelho and dicofre value as a result of their geocoordinates.
 
-All the data inside the stations' table is retrieved and fetched into a CSV file that will be imported into QGIS.
+All the data inside the stations' table was retrieved and fetched into a CSV file that had to be imported into QGIS.
+
+### QGIS layers intersection
+An already existing QGIS project was used as a base to import the stations' data fetched.
+The QGIS project had multipolygon layers imitating each of the concelhos found in Portugal (Mainland and Islands), covering the total area of the country.
+Each multipolygon had a table of attributes with data related to the area covered, such as the concelho, dicofre, area's size, height, etc.
+
+The idea in this step was to import the stations' data into QGIS as a point layer using the CSV file fetched from the project's database.
+For each station, one point would be represented on the map according to their coordinates (latitude/longitude columns), located somewhere over the already existing multipolygons.
+
+
+
+Once imported, the points layer information (stations' data) and the multipolygon information could be merged by means of the 'intersection' tool from QGIS, which intersects two selected layers creating a new one containing all the data.
