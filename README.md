@@ -1,7 +1,6 @@
 # Portugal Weather Analysis
 Wind Roses per municipality for Historical Hourly Wind Records of Mainland Portugal, Açores, and Madeira (2018–2023)
 <br>
-<br>
 
 ## Objective Summary
 For this project, multiple files in **JSON** format (1.42 GB) containing climate data from different weather stations in Portugal (Mainland and Islands) were cleaned, formatted, and transformed into **CSV** files in order to create proper wind roses per municipality on a yearly, monthly, and yearly + monthly basis.
@@ -12,13 +11,11 @@ For this project, multiple files in **JSON** format (1.42 GB) containing climate
 > Also known as Quantum GIS, is a geographic information system (GIS) software that is free and open-source.<br>
 > It takes part in several steps, such as providing complementary data in function of the geolocation of each weather station as well as creating the final Atlas maps from the resulting wind roses.
 <br>
-<br>
 
 ## Project Assumptions
 - All partially incomplete records are treated as corrupt and disregarded.
 
 - Data from 2018 and 2023 is not complete for the entire year, given the project's duration. Therefore, while it was utilized for monthly historical analysis, it was not represented on a yearly basis.
-<br>
 <br>
 
 ## Project Organization
