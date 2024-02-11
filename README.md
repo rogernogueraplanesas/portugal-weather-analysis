@@ -17,6 +17,7 @@ For this project, multiple files in **JSON** format (1.42 GB) containing climate
 
 ## Project Organization
 The project can be divided into seven distinct steps.
+<br>
 
 ### Database structuring, and preliminary data insertion
 The datasource consists of several JSON files divided into two main groups: one containing data related to the involved Portuguese weather stations, and the other containing data related to hourly observations made by the weather stations between 2018 and 2022.
