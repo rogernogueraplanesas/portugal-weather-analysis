@@ -43,4 +43,6 @@ All the JSON files were processed, and the main data extracted from them was ins
 ### Exporting station data into QGIS
 With both tables filled out with data from the data source, there are two more key parameters missing. Despite having data regarding the stations and their readings, there is no column assigned to the location of the weather stations, except for the coordinates themselves.
 
-For this project, it is crucial to locate the stations in a specific 'concelho' (municipality) with their respective 'dicofre' numbers (zip code numbers). The final windroses will be created in function of the 'concelhos' found in Portugal. The dicofre number is a key value for organizational purposes, as the resulting windrose files must contain the dicofre value in their name.
+For this project, it is crucial to locate the stations in a specific *'concelho'* (municipality) with their respective *'dicofre'* numbers (zip code numbers). The final windroses will be created in function of the 'concelhos' found in Portugal. The dicofre number is a key value for organizational purposes, as the resulting windrose files must contain the dicofre value in their name.
+
+QGIS is involved in the relational part where each station gets a concelho and dicofre value in function of the geocoordinates.
