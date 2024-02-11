@@ -52,13 +52,19 @@ QGIS is involved in the relational part, where each station gets a concelho and 
 All the data inside the stations' table was retrieved and fetched into a CSV file that had to be imported into QGIS.
 
 ### QGIS layers intersection
-An already existing QGIS project was used as a base to import the stations' data fetched.
-The QGIS project had multipolygon layers imitating each of the concelhos found in Portugal (Mainland and Islands), covering the total area of the country.
+An already existing QGIS project was used as a base to import the stations' data.
+The QGIS project had multipolygon layers imitating each of the concelhos found in Portugal (mainland and islands), covering the total area of the country.
 Each multipolygon had a table of attributes with data related to the area covered, such as the concelho, dicofre, area's size, height, etc.
 
-The idea in this step was to import the stations' data into QGIS as a point layer using the CSV file fetched from the project's database.
-For each station, one point would be represented on the map according to their coordinates (latitude/longitude columns), located somewhere over the already existing multipolygons.
+The idea in this step was to import the stations' data CSV file into QGIS as a point layer.
+For each station, one point would be represented on the map according to their coordinates (latitude and longitude columns), located somewhere over the already existing multipolygons.
 
+<br>
+<div align="center">
+  <img src="sample_images/weather_stations.png" width="35%" height="35%" alt="Stations location in QGIS">
+  <br>
+  <sub>Weather stations location</sub>
+</div>
+<br>
 
-
-Once imported, the points layer information (stations' data) and the multipolygon information could be merged by means of the 'intersection' tool from QGIS, which intersects two selected layers creating a new one containing all the data.
+Once imported, the points layer information (stations' data) and the multipolygon information could be merged by means of the 'intersection' tool from QGIS, which intersects two selected layers, creating a new one containing all the data. This new layer was then exported as a new CSV file to work with.
