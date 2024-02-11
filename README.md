@@ -23,17 +23,16 @@ The first step of the project consisted of the creation of two different tables 
 The table containing stations' data was named `stations` and the one containing records from each station was named `observations`.
 
 All the JSON files were processed, and the main data extracted from them was inserted into each corresponding table.
-
-
-<br> <!-- Add extra space -->
+<br>
 <div align="center">
-  <img src="sample_images/stations_table.png" width="40%" height="40%" alt="Stations table">
+  <img src="sample_images/stations_table.png" width="50%" height="50%" alt="Stations table">
+  <br>
   <sub>Stations table structure</sub>
 </div>
-<br> <!-- Add extra spacing -->
+<br> 
 <div align="center">
   <img src="sample_images/observations_table.png" width="40%" height="40%" alt="Observations table">
-  <br> <!-- Add extra spacing -->
+  <br> 
   <sub>Observations table structure</sub>
 </div>
 
