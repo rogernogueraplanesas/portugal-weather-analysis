@@ -50,6 +50,7 @@ For this project, it was crucial to locate the stations in a specific *'concelho
 QGIS is involved in the relational part, where each station gets a concelho and dicofre value as a result of their geocoordinates.
 
 All the data inside the stations' table was retrieved and fetched into a CSV file that had to be imported into QGIS.
+<br>
 
 ### QGIS layers intersection
 An already existing QGIS project was used as a base to import the stations' data.
