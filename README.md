@@ -11,7 +11,7 @@ For this project, multiple files in **JSON** format (1.42 GB) containing climate
 > QGIS software is used throughout this project.<br>
 > Also known as Quantum GIS, QGIS is a geographic information system (GIS) software. More information can be found [here](https://qgis.org/en/site/about/index.html).
 <br>
-<br>
+
 
 ## Project Assumptions
 - All partially incomplete records are treated as corrupt and disregarded.
