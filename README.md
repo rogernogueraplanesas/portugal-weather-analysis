@@ -138,3 +138,27 @@ The resultant windroses presented the following appearance:
 
 ### Atlas maps
 For company purposes, the final wind roses were included in a set of atlas maps that showed the monthly and annual variation of the wind in each municipality during the period of time studied. The final composition of the maps is seen in the following images:
+
+<br>
+<div align="center">
+  <img src="sample_images/Lisboa-atlas-1.png" width="45%" height="45%" alt="Lisboa Atlas Map 1st page">
+  <br>
+  <sub>Lisboa Atlas Map 1st page</sub>
+</div>
+<br>
+
+<br>
+<div align="center">
+  <img src="sample_images/Lisboa-atlas-2.png" width="45%" height="45%" alt="Lisboa Atlas Map 2nd page">
+  <br>
+  <sub>Lisboa Atlas Map 2nd page</sub>
+</div>
+<br>
+
+<br>
+<div align="center">
+  <img src="sample_images/Lisboa-atlas-3.png" width="45%" height="45%" alt="Lisboa Atlas Map 3rd page">
+  <br>
+  <sub>Lisboa Atlas Map 3rd page</sub>
+</div>
+<br>
