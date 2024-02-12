@@ -141,7 +141,7 @@ For company purposes, the final wind roses were included in a set of atlas maps 
 
 <br>
 <div align="center">
-  <img src="sample_images/Lisboa-atlas-1.png" width="50%" height="50%" alt="Lisboa Atlas Map 1st page">
+  <img src="sample_images/Lisboa-atlas-1.png" width="60%" height="60%" alt="Lisboa Atlas Map 1st page">
   <br>
   <sub>Lisboa Atlas Map 1st page</sub>
 </div>
@@ -149,7 +149,7 @@ For company purposes, the final wind roses were included in a set of atlas maps 
 
 <br>
 <div align="center">
-  <img src="sample_images/Lisboa-atlas-2.png" width="50%" height="50%" alt="Lisboa Atlas Map 2nd page">
+  <img src="sample_images/Lisboa-atlas-2.png" width="60%" height="60%" alt="Lisboa Atlas Map 2nd page">
   <br>
   <sub>Lisboa Atlas Map 2nd page</sub>
 </div>
@@ -157,7 +157,7 @@ For company purposes, the final wind roses were included in a set of atlas maps 
 
 <br>
 <div align="center">
-  <img src="sample_images/Lisboa-atlas-3.png" width="50%" height="50%" alt="Lisboa Atlas Map 3rd page">
+  <img src="sample_images/Lisboa-atlas-3.png" width="60%" height="60%" alt="Lisboa Atlas Map 3rd page">
   <br>
   <sub>Lisboa Atlas Map 3rd page</sub>
 </div>
