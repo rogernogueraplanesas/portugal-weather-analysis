@@ -163,4 +163,4 @@ For company purposes, the final wind roses were included in a set of atlas maps 
 </div>
 <br>
 
-> The QGIS Atlas is a true open source technique to generate hundreds of maps in minutes. In the map-making business, this means being efficient without compromising art and intricacy. More information [here]([https://qgis.org/en/site/about/index.html](https://gisgeography.com/how-to-create-qgis-atlas-mapbooks/).
+> The QGIS Atlas is a true open source technique to generate hundreds of maps in minutes. In the map-making business, this means being efficient without compromising art and intricacy. More information [here](https://gisgeography.com/how-to-create-qgis-atlas-mapbooks/).
