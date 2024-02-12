@@ -16,7 +16,7 @@ For this project, multiple files in **JSON** format (1.42 GB) containing climate
 ## Project Assumptions
 - All partially incomplete records are treated as corrupt and disregarded.
 
-- Data from 2018 and 2023 is not complete for the entire year, given the project's duration. Therefore, while it was utilized for monthly historical analysis, it was not represented on a yearly basis.
+- Data from 2018 and 2023 is not complete for the entire year, given the project's duration. Therefore, while it was utilized for monthly historical analysis, it was not represented on any Atlas map.
 <br>
 
 ## Project Organization
@@ -137,3 +137,4 @@ The resultant windroses presented the following appearance:
 
 
 ### Atlas maps
+For company purposes, the final wind roses were included in a set of atlas maps that showed the monthly and annual variation of the wind in each municipality during the period of time studied. The final composition of the maps is seen in the following images:
