@@ -20,11 +20,11 @@ For this project, multiple files in **JSON** format (1.42 GB) containing climate
 <br>
 
 ## Project Organization
-The project can be divided into seven distinct steps.
+The project can be divided into six distinct steps.
 <br>
 
 ### Database structuring, and preliminary data insertion
-The datasource consists of several JSON files divided into two main groups: one containing data related to the involved Portuguese weather stations, and the other containing data related to hourly observations made by the weather stations between 2018 and 2022.
+The data source consists of several JSON files divided into two main groups: one containing data related to the involved Portuguese weather stations, and the other containing data related to hourly observations made by the weather stations between 2018 and 2022.
 
 The first step of the project consisted of the creation of two different tables inside a new SQLite database named `weather.db`.
 The table containing stations' data was named `stations` and the one containing records from each station was named `observations`.
