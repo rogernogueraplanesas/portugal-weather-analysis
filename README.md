@@ -126,7 +126,7 @@ The resultant windroses presented the following appearance:
 
 <br>
 <div align="center">
-  <img src="sample_images/1106_Lisboa_2018.png" width="45%" height="45%" alt="Lisboa 2018 yearly windrose">
+  <img src="sample_images/1106_Lisboa_2018.png" width="42%" height="42%" alt="Lisboa 2018 yearly windrose">
   <br>
   <sub>Lisboa 2018 windrose</sub>
 </div>
@@ -141,7 +141,7 @@ For company purposes, the final wind roses were included in a set of atlas maps 
 
 <br>
 <div align="center">
-  <img src="sample_images/Lisboa-atlas-1.png" width="45%" height="45%" alt="Lisboa Atlas Map 1st page">
+  <img src="sample_images/Lisboa-atlas-1.png" width="50%" height="50%" alt="Lisboa Atlas Map 1st page">
   <br>
   <sub>Lisboa Atlas Map 1st page</sub>
 </div>
@@ -149,7 +149,7 @@ For company purposes, the final wind roses were included in a set of atlas maps 
 
 <br>
 <div align="center">
-  <img src="sample_images/Lisboa-atlas-2.png" width="45%" height="45%" alt="Lisboa Atlas Map 2nd page">
+  <img src="sample_images/Lisboa-atlas-2.png" width="50%" height="50%" alt="Lisboa Atlas Map 2nd page">
   <br>
   <sub>Lisboa Atlas Map 2nd page</sub>
 </div>
@@ -157,7 +157,7 @@ For company purposes, the final wind roses were included in a set of atlas maps 
 
 <br>
 <div align="center">
-  <img src="sample_images/Lisboa-atlas-3.png" width="45%" height="45%" alt="Lisboa Atlas Map 3rd page">
+  <img src="sample_images/Lisboa-atlas-3.png" width="50%" height="50%" alt="Lisboa Atlas Map 3rd page">
   <br>
   <sub>Lisboa Atlas Map 3rd page</sub>
 </div>
