@@ -32,7 +32,7 @@ The project can be divided into six distinct steps.
 ### Database structuring, and preliminary data insertion
 The data source consists of several JSON files divided into two main groups: one containing data related to the involved Portuguese weather stations, and the other containing data related to hourly observations made by the weather stations between 2018 and 2022.
 
-The first step of the project consisted of the creation of two different tables inside a new SQLite database named `weather.db`.
+The first step of the project consisted of the creation of two different tables inside a new locally stored SQLite database named `weather.db`.
 The table containing stations' data was named `stations` and the one containing records from each station was named `observations`.
 
 All the JSON files were processed, and the main data extracted from them was inserted into each corresponding table.
