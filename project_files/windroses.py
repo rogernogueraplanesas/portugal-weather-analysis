@@ -90,7 +90,7 @@ def create_yearly_windrose():
         cbar.set_label('Wind Speed [m/s]')
 
         plt.title(f'{concelho} - {year}', fontsize=20, y=1.05)
-        file_name = (f'{group["dicofre"].iloc[0]}_{concelho}_{year}.png')
+        file_name = f'{str(group["dicofre"].iloc[0]).zfill(4)}_{concelho}_{year}.png'
         plt.savefig(os.path.join('year_windroses', file_name), dpi=300, bbox_inches='tight', pad_inches=0.1)
         plt.close(fig)
 
@@ -197,7 +197,7 @@ def create_monthly_windrose():
 
         actual_month = month_mapping[month]
         plt.title(f'{concelho} - {actual_month}', fontsize=20, y=1.05)
-        file_name = (f'{group["dicofre"].iloc[0]}_{concelho}_{actual_month}.png')
+        file_name = f'{str(group["dicofre"].iloc[0]).zfill(4)}_{concelho}_{actual_month}.png'
         plt.savefig(os.path.join('month_windroses', file_name), dpi=300, bbox_inches='tight', pad_inches=0.1)
         plt.close(fig)
 
@@ -305,7 +305,7 @@ def create_year_month_windrose():
         plt.title(f'{concelho} - {actual_month} {year}', fontsize=20, y=1.05)
         print(f'Data for {concelho} - {actual_month} {year}:')
         print(group[['Direction', 'Min', 'Average', 'Max']])
-        file_name = (f'{group["dicofre"].iloc[0]}_{concelho}_{year}_{actual_month}.png')
+        file_name = f'{str(group["dicofre"].iloc[0]).zfill(4)}_{concelho}_{year}_{actual_month}.png'
         plt.savefig(os.path.join('year_month_windroses', file_name), dpi=300, bbox_inches='tight', pad_inches=0.1)
         plt.close(fig)
 
