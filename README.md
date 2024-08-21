@@ -36,7 +36,7 @@ For this project, multiple files in **JSON** format (1.42 GB) containing climate
 The project can be divided into six distinct steps.
 <br>
 
-### 1.Database structuring, and preliminary data insertion
+### 1. Database structuring, and preliminary data insertion
 The raw data source consists of several JSON files divided into two main groups: one containing metadata related to the involved Portuguese weather stations, and the other containing data related to hourly observations made by the weather stations between 2018 and 2023.
 
 The first step of the project consisted on the creation of two different tables inside a new locally stored SQLite database named `weather.db`.
@@ -59,7 +59,7 @@ All the raw data was processed and inserted into each corresponding table.
 </div>
 
 
-### 2.Exporting stations' data as a CSV
+### 2. Exporting stations' data as a CSV
 With both tables filled out with data, there were two more key parameters missing. Despite having data regarding the stations and their readings, there was no column assigned to the location of the weather stations, except for the coordinates themselves.
 
 For this project, it was crucial to locate the stations in a specific *'concelho'* (municipality) with their respective *'dicofre'* code.<br>
@@ -70,7 +70,7 @@ All the data inside the `stations` table was retrieved and fetched into a CSV fi
 QGIS is involved in the relational part, where each station gets a concelho name and dicofre value as a result of their geocoordinates.
 <br>
 
-### 3.QGIS layers intersection
+### 3. QGIS layers intersection
 An already existing QGIS project was used as a base to import the stations' data.
 The QGIS project had multipolygon layers delineating each of the concelhos found in Portugal (mainland and islands), covering the total area of the country (projected base map).
 Each multipolygon contained a set of attributes with data related to the area covered, such as the concelho's name, the dicofre code, the area's size, height, etc.
@@ -96,7 +96,7 @@ Once imported, the new points layer (stations' data) and the QGIS project's mult
 > It is important to select UTF-8 as encoding type when importing and exporting the CSV files from QGIS.
 
 
-### 4.Cleaning and inserting QGIS merged data into the db
+### 4. Cleaning and inserting QGIS merged data into the db
 The CSV file exported from QGIS had many new information appended related to the weather stations; not all of it had to be used. In fact, only the id_estacao (station id), the concelho's name, and the dicofre's code for each station were needed.
 <br>
 Although the id_estacao value was already present in the stations table, its condition of **PRIMARY KEY** was needed for the proper insertion of the concelho and dicofre values per station.
@@ -104,7 +104,7 @@ Although the id_estacao value was already present in the stations table, its con
 Two new columns were created, and the values for the concelho and dicofre per station were inserted based on each id_estacao. Now both tables in the database were totally complete.
 <br>
 
-### 5.Retrieving wind data and plotting the final windroses
+### 5. Retrieving wind data and plotting the final windroses
 By means of an inner join, data from both stations and observations table is retrieved in order to collect the required information needed to plot windroses per concelho on a yearly, monthly, and yearly + monthly basis.<br>
 An example of a query written to obtain yearly wind data is shown next:
 
@@ -150,7 +150,7 @@ The resultant windroses presented the following appearance:
 > Given the significant difference in windspeed values between the maximum and the minimum, there may be windroses where it can be difficult to distinguish the minimum wind speed value due to the scale.
 
 
-### 6.Atlas maps
+### 6. Atlas maps
 For company purposes, the final wind roses were included in a set of atlas maps that showed the monthly and annual variation of the wind in each municipality during the period of time studied. The final composition of the maps is seen in the following images:
 
 <br>
