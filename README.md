@@ -8,6 +8,12 @@ Requirements installation:
 pip install -r requirements.txt
 ```
 <br>
+<div align="center">
+  <img src="sample_images/project_overlay.jpg" width="35%" height="35%" alt="Schematic process">
+  <br>
+  <sub>Schematic process</sub>
+</div>
+<br>
 
 ## Objective Summary
 For this project, multiple files in **JSON** format (1.42 GB) containing climate data from different weather stations in Portugal (Mainland and Islands) were cleaned, formatted, and transformed into **CSV** files in order to create proper wind roses per municipality on a yearly, monthly, and yearly + monthly basis. A set of Atlas maps was created using the resulting wind roses.
