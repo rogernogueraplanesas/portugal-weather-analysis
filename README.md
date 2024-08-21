@@ -131,12 +131,10 @@ GROUP BY year, dicofre, direcc_vento;
 As seen in the code block above, the wind direction (id_direcc_vento) was represented with a specific code from 1.0 (N) to 8.0 (NW).<br>
 Moreover, any windspeed (intensidade_de_vento) presenting a value of -99 was treated as an error and not taken into account.<br>
 The windspeed bar per direction was supposed to contain the minimum, the maximum and the average values recorded in the concelho during specific the span of time represented.
-
 <br>
 For the final windroses, *_pandas_*, *_matplotlib_* and *_numpy_* were used.
-The values for the wind direction were transformed into degrees (fractions of 45º).
-<br>
-The resultant windroses presented the following appearance:<br>
+The values for the wind direction were transformed into degrees (fractions of 45º).<br>
+The resultant windroses presented the following appearance:<br><br>
 
 <br>
 <div align="center">
