@@ -99,6 +99,7 @@ def add_columns(database):
     cursor = database.cursor()
     cursor.execute(tq.ADD_DICOFRE_COLUMN)
     cursor.execute(tq.ADD_CONCELHO_COLUMN)
+    database.commit()
 
 
 #----------------------------------------------------------------------------------------------
@@ -107,6 +108,7 @@ def drop_columns(database):
     cursor = database.cursor()
     cursor.execute(tq.DROP_DICOFRE_COLUMN)
     cursor.execute(tq.DROP_CONCELHO_COLUMN)
+    database.commit()
 #----------------------------------------------------------------------------------------------
     
 
