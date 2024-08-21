@@ -25,6 +25,7 @@ For this project, multiple files in **JSON** format (1.42 GB) containing climate
 </div>
 <br>
 
+
 ## Project Assumptions
 - All partially incomplete records are treated as corrupt and disregarded.
 
