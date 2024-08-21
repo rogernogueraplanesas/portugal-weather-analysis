@@ -8,12 +8,6 @@ Requirements installation:
 pip install -r requirements.txt
 ```
 <br>
-<div align="center">
-  <img src="sample_images/project_overlay.jpg" width="75%" height="75%" alt="Schematic process">
-  <br>
-  <sub>Schematic process</sub>
-</div>
-<br>
 
 ## Objective Summary
 For this project, multiple files in **JSON** format (1.42 GB) containing climate data from different weather stations in Portugal (Mainland and Islands) were cleaned, formatted, and transformed into **CSV** files in order to create proper wind roses per municipality on a yearly, monthly, and yearly + monthly basis. A set of Atlas maps was created using the resulting wind roses.
@@ -23,7 +17,13 @@ For this project, multiple files in **JSON** format (1.42 GB) containing climate
 > QGIS is used throughout this project.<br>
 > Also known as Quantum GIS, is a geographic information system (GIS) software. More information can be found [here](https://qgis.org/en/site/about/index.html).
 <br>
-
+<br>
+<div align="center">
+  <img src="sample_images/project_overlay.jpg" width="75%" height="75%" alt="Schematic process">
+  <br>
+  <sub>Schematic process</sub>
+</div>
+<br>
 
 ## Project Assumptions
 - All partially incomplete records are treated as corrupt and disregarded.
