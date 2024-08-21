@@ -9,7 +9,7 @@ pip install -r requirements.txt
 ```
 <br>
 <div align="center">
-  <img src="sample_images/project_overlay.jpg" width="35%" height="35%" alt="Schematic process">
+  <img src="sample_images/project_overlay.jpg" width="55%" height="55%" alt="Schematic process">
   <br>
   <sub>Schematic process</sub>
 </div>
