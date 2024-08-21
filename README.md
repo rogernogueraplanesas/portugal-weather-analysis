@@ -36,13 +36,12 @@ The project can be divided into six distinct steps.
 <br>
 
 ### Database structuring, and preliminary data insertion
-The data source consists of several JSON files divided into two main groups: one containing data related to the involved Portuguese weather stations, and the other containing data related to hourly observations made by the weather stations between 2018 and 2022.
+The raw data source consists of several JSON files divided into two main groups: one containing metadata related to the involved Portuguese weather stations, and the other containing data related to hourly observations made by the weather stations between 2018 and 2023.
 
-The first step of the project consisted of the creation of two different tables inside a new locally stored SQLite database named `weather.db`.
-The table containing stations' data was named `stations` and the one containing records from each station was named `observations`.
+The first step of the project consisted on the creation of two different tables inside a new locally stored SQLite database named `weather.db`.
+The table containing stations' data was named `stations`, and the one containing records from each station was named `observations`.
 
-All the JSON files were processed, and the main data extracted from them was inserted into each corresponding table.
-
+All the raw data was processed and inserted into each corresponding table.
 
 <br>
 <div align="center">
@@ -60,21 +59,22 @@ All the JSON files were processed, and the main data extracted from them was ins
 
 
 ### Exporting stations' data as a CSV
-With both tables filled out with data from the data source, there were two more key parameters missing. Despite having data regarding the stations and their readings, there was no column assigned to the location of the weather stations, except for the coordinates themselves.
+With both tables filled out with data, there were two more key parameters missing. Despite having data regarding the stations and their readings, there was no column assigned to the location of the weather stations, except for the coordinates themselves.
 
-For this project, it was crucial to locate the stations in a specific *'concelho'* (municipality) with their respective *'dicofre'* code. The final windroses are created based on each concelho and dicofre found in Portugal. The dicofre number is a key code representing a unique combination of *'distrito'* (district) + *'concelho'* (municipality) + *'freguesia'* (parish); moreover, it is useful for organizational purposes, as the resulting windroses will be easier to locate, group or filter by the team.
-
-QGIS is involved in the relational part, where each station gets a concelho name and dicofre value as a result of their geocoordinates.
+For this project, it was crucial to locate the stations in a specific *'concelho'* (municipality) with their respective *'dicofre'* code.<br>
+The final windroses are created based on each concelho found in Portugal. The dicofre number is a key code representing a unique combination of *'distrito'* (district) + *'concelho'* (municipality) + *'freguesia'* (parish); moreover, it is useful for organizational purposes, as the resulting windroses will be easier to locate, group or filter.
 
 All the data inside the `stations` table was retrieved and fetched into a CSV file that was imported into QGIS.
+
+QGIS is involved in the relational part, where each station gets a concelho name and dicofre value as a result of their geocoordinates.
 <br>
 
 ### QGIS layers intersection
 An already existing QGIS project was used as a base to import the stations' data.
-The QGIS project had multipolygon layers imitating each of the concelhos found in Portugal (mainland and islands), covering the total area of the country (projected base map - WGS84 -).
-Each multipolygon had a set of attributes with data related to the area covered, such as the concelho, dicofre, area's size, height, etc.
+The QGIS project had multipolygon layers delineating each of the concelhos found in Portugal (mainland and islands), covering the total area of the country (projected base map).
+Each multipolygon contained a set of attributes with data related to the area covered, such as the concelho's name, the dicofre code, the area's size, height, etc.
 
-The idea in this step was to import the stations' data CSV file into QGIS as a point layer.
+The stations' data CSV file was imported into QGIS as a point layer.
 For each station, one point would be represented on the map according to their geocoordinates (latitude and longitude columns), located somewhere over the already existing multipolygons.
 
 <br>
@@ -85,7 +85,7 @@ For each station, one point would be represented on the map according to their g
 </div>
 <br>
 
-Once imported, the new points layer (stations' data) and the QGIS project's multipolygon information were merged by means of the 'intersection' tool from QGIS, which intersects two selected layers, creating a new one containing all of their data. This new layer's informaion was then exported as a new CSV file to work with.
+Once imported, the new points layer (stations' data) and the QGIS project's multipolygon layer were merged by means of the 'intersection' tool from QGIS, which intersects two selected layers creating a new one containing all of their data combined. This new layer's information was then exported as a new CSV file to work with.
 
 > [!NOTE]
 > Both the multipolygonal layers and the imported points layer were using the `EPSG:4326 - WGS 84` Coordinate Reference System (CRS).
@@ -96,10 +96,10 @@ Once imported, the new points layer (stations' data) and the QGIS project's mult
 
 
 ### Cleaning and inserting QGIS information into the database
-The CSV file exported from QGIS had many information related to the weather stations; not all of it had to be used. In fact, only the id_estacao (station id), the concelho, and the dicofre values for each station were needed.
-
+The CSV file exported from QGIS had many new information appended related to the weather stations; not all of it had to be used. In fact, only the id_estacao (station id), the concelho's name, and the dicofre's code for each station were needed.
+<br>
 Although the id_estacao value was already present in the stations table, its condition of **PRIMARY KEY** was needed for the proper insertion of the concelho and dicofre values per station.
-
+<br>
 Two new columns were created, and the values for the concelho and dicofre per station were inserted based on each id_estacao. Now both tables in the database were totally complete.
 <br>
 
@@ -127,13 +127,14 @@ GROUP BY year, dicofre, direcc_vento;
 """
 ```
 
-As seen in the code block above, the wind direction (id_direcc_vento) was represented with a specific code. Moreover, all the windspeed (intensidade_de_vento) presenting a value of -99 was treated as an error and not taken into account.<br>The windspeed present per direction was supposed to contain the minimum, the maximum and the average values recorded in the concelho during specific the span of time represented.
+As seen in the code block above, the wind direction (id_direcc_vento) was represented with a specific code (from 1.0 (North) to 8.0 (North-West).<br>
+Moreover, any windspeed (intensidade_de_vento) presenting a value of -99 was treated as an error and not taken into account.<br>
+The windspeed bar per direction was supposed to contain the minimum, the maximum and the average values recorded in the concelho during specific the span of time represented.
 
-
-For the final windroses, _pandas_, _matplotlib_ and _numpy_ were used.
-The values for the wind direction were transformed into degrees by applying a mapping.
-
-
+<br>
+For the final windroses, *_pandas_*, *_matplotlib_* and *_numpy_* were used.
+The values for the wind direction were transformed into degrees (fractions of 45º).
+<br>
 The resultant windroses presented the following appearance:
 
 <br>
@@ -145,7 +146,7 @@ The resultant windroses presented the following appearance:
 <br>
 
 > [!NOTE]
-> Given the significant difference in wind speed values between the maximum and the minimum, there may be windroses where it can be difficult to distinguish the minimum wind speed value due to the scale.
+> Given the significant difference in windspeed values between the maximum and the minimum, there may be windroses where it can be difficult to distinguish the minimum wind speed value due to the scale.
 
 
 ### Atlas maps
