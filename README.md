@@ -136,7 +136,7 @@ The windspeed bar per direction was supposed to contain the minimum, the maximum
 For the final windroses, *_pandas_*, *_matplotlib_* and *_numpy_* were used.
 The values for the wind direction were transformed into degrees (fractions of 45º).
 <br>
-The resultant windroses presented the following appearance:
+The resultant windroses presented the following appearance:<br>
 
 <br>
 <div align="center">
