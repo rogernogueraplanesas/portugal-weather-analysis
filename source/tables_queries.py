@@ -1,4 +1,3 @@
-
 #Command to create the tabe stations
 CREATE_STATIONS_TABLE = """
 CREATE TABLE IF NOT EXISTS stations (
@@ -42,6 +41,11 @@ INSERT INTO observations(date, id_estacao, intensidade_de_vento_km, temperatura,
 VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 """
 
+#Command to retrieve all data inside 'stations' table
+GET_STATIONS_DATA = """
+SELECT *
+FROM stations;
+"""
 
 #Command to add a column 'dicofre' into the stations table
 ADD_DICOFRE_COLUMN = """
