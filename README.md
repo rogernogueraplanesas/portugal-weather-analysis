@@ -33,7 +33,7 @@ For this project, multiple files in **JSON** format (1.42 GB) containing climate
 <br>
 
 <h2>
-  <img src="sample_images/docs.jpg" width="40" height="40" alt="Icon" style="vertical-align: middle;"/> 
+  <img src="sample_images/docs.jpg" width="25" height="25" alt="Icon" style="vertical-align: middle;"/> 
   <span style="vertical-align: middle;">Project Organization</span>
 </h2>
 The project can be divided into six distinct steps.
