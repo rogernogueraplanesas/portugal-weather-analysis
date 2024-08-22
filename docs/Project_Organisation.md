@@ -11,14 +11,14 @@ All the raw data was processed and inserted into each corresponding table.
 
 <br>
 <div align="center">
-  <img src="sample_images/stations_table.png" width="35%" height="35%" alt="Stations table">
+  <img src="../sample_images/stations_table.png" width="35%" height="35%" alt="Stations table">
   <br>
   <sub>Stations table structure</sub>
 </div>
 <br>
 <br> 
 <div align="center">
-  <img src="sample_images/observations_table.png" width="80%" height="80%" alt="Observations table">
+  <img src="../sample_images/observations_table.png" width="80%" height="80%" alt="Observations table">
   <br style="margin-bottom: 0.25em;">
   <sub>Observations table structure</sub>
 </div>
