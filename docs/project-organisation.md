@@ -1,4 +1,5 @@
-The project can be divided into six distinct steps.
+# Project Organization
+The project can be divided into six main steps.
 <br>
 
 ### 1. Database structuring, and preliminary data insertion
