@@ -45,7 +45,7 @@ For each station, one point would be represented on the map according to their g
 
 <br>
 <div align="center">
-  <img src="sample_images/weather_stations.png" width="50%" height="50%" alt="Stations location in QGIS">
+  <img src="../sample_images/weather_stations.png" width="50%" height="50%" alt="Stations location in QGIS">
   <br>
   <sub>Weather stations location</sub>
 </div>
@@ -103,7 +103,7 @@ The resultant windroses presented the following appearance:<br>
 
 <br>
 <div align="center">
-  <img src="sample_images/1106_Lisboa_2018.png" width="42%" height="42%" alt="Lisboa 2018 yearly windrose">
+  <img src="../sample_images/1106_Lisboa_2018.png" width="42%" height="42%" alt="Lisboa 2018 yearly windrose">
   <br>
   <sub>Lisboa 2018 windrose</sub>
 </div>
@@ -118,7 +118,7 @@ For company purposes, the final wind roses were included in a set of atlas maps 
 
 <br>
 <div align="center">
-  <img src="sample_images/Lisboa-atlas-1.png" width="60%" height="60%" alt="Lisboa Atlas Map 1st page">
+  <img src="../sample_images/Lisboa-atlas-1.png" width="60%" height="60%" alt="Lisboa Atlas Map 1st page">
   <br>
   <sub>Lisboa Atlas Map 1st page</sub>
 </div>
@@ -126,7 +126,7 @@ For company purposes, the final wind roses were included in a set of atlas maps 
 
 <br>
 <div align="center">
-  <img src="sample_images/Lisboa-atlas-2.png" width="60%" height="60%" alt="Lisboa Atlas Map 2nd page">
+  <img src="../sample_images/Lisboa-atlas-2.png" width="60%" height="60%" alt="Lisboa Atlas Map 2nd page">
   <br>
   <sub>Lisboa Atlas Map 2nd page</sub>
 </div>
@@ -134,7 +134,7 @@ For company purposes, the final wind roses were included in a set of atlas maps 
 
 <br>
 <div align="center">
-  <img src="sample_images/Lisboa-atlas-3.png" width="60%" height="60%" alt="Lisboa Atlas Map 3rd page">
+  <img src="../sample_images/Lisboa-atlas-3.png" width="60%" height="60%" alt="Lisboa Atlas Map 3rd page">
   <br>
   <sub>Lisboa Atlas Map 3rd page</sub>
 </div>
