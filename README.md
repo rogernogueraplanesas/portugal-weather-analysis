@@ -7,6 +7,7 @@ Creating wind roses and Atlas maps per municipality for Historical Hourly Wind R
   <img src="sample_images/requisites.jpg" width="25" height="25" alt="Icon" style="vertical-align: middle;"/> 
   <span style="vertical-align: middle;">Requirements</span>
 </h2>
+
 ```
 pip install -r requirements.txt
 ```
