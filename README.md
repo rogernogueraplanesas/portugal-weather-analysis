@@ -18,7 +18,7 @@ pip install -r requirements.txt
   <span style="vertical-align: middle;">Summary</span>
 </h2>
 
-For this project, multiple files in **JSON** format (1.42 GB) containing climate data from different weather stations in Portugal (Mainland and Islands) were cleaned, formatted, and transformed into **CSV** files in order to create proper wind roses per municipality on a yearly, monthly, and yearly + monthly basis. A set of Atlas maps was created using the resulting wind roses.
+For this project, multiple files in **JSON** format (1.42 GB) containing climate data from different weather stations in Portugal (Mainland and Islands) were cleaned, formatted, and transformed into **CSV** files in order to create proper wind roses per municipality on a yearly, monthly, and yearly + monthly basis.<br> A set of Atlas maps was created using the resulting wind roses.
 
 > SQLite for the database creation.
 
@@ -49,4 +49,4 @@ For this project, multiple files in **JSON** format (1.42 GB) containing climate
   <span style="vertical-align: middle;">Project Organisation</span>
 </h2>
 
-The process followed in this project can be consulted in the [documentation file](/docs/Project_Organisation.md).
+The process followed in this project can be consulted in the [documentation file](/docs/project-organisation.md).
