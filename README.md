@@ -49,7 +49,7 @@ For this project, multiple files in **JSON** format (1.42 GB) containing climate
   <span style="vertical-align: middle;">Project Organisation</span>
 </h2>
 
-The process followed in this project can be consulted in the [documentation file](/docs/Project Organisation).
+The process followed in this project can be consulted in the [documentation file](/docs/Project_Organisation.md).
 The project can be divided into six distinct steps.
 <br>
 
