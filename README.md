@@ -3,13 +3,19 @@
 Creating wind roses and Atlas maps per municipality for Historical Hourly Wind Records of Mainland Portugal, Açores, and Madeira (2018–2023).
 <br>
 <br>
-## Requirements installation:
+<h2>
+  <img src="sample_images/requisites.jpg" width="25" height="25" alt="Icon" style="vertical-align: middle;"/> 
+  <span style="vertical-align: middle;">Requirements</span>
+</h2>
 ```
 pip install -r requirements.txt
 ```
 <br>
 
-## Summary
+<h2>
+  <img src="sample_images/summary.jpg" width="25" height="25" alt="Icon" style="vertical-align: middle;"/> 
+  <span style="vertical-align: middle;">Summary</span>
+</h2>
 For this project, multiple files in **JSON** format (1.42 GB) containing climate data from different weather stations in Portugal (Mainland and Islands) were cleaned, formatted, and transformed into **CSV** files in order to create proper wind roses per municipality on a yearly, monthly, and yearly + monthly basis. A set of Atlas maps was created using the resulting wind roses.
 
 > SQLite for the database creation.
@@ -26,7 +32,10 @@ For this project, multiple files in **JSON** format (1.42 GB) containing climate
 <br>
 
 
-## Project Assumptions
+<h2>
+  <img src="sample_images/assumption.png" width="25" height="25" alt="Icon" style="vertical-align: middle;"/> 
+  <span style="vertical-align: middle;">Project Assumptions</span>
+</h2>
 - All partially incomplete records are treated as corrupt and disregarded.
 
 - Data from 2018 and 2023 is not complete for the entire year, given the project's duration. Therefore, while it was utilized for monthly historical analysis, it was not represented on any Atlas map.
