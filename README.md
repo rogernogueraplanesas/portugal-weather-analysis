@@ -49,4 +49,4 @@ For this project, multiple files in **JSON** format (1.42 GB) containing climate
   <span style="vertical-align: middle;">Project Organisation</span>
 </h2>
 
-The specific workflow followed in this project can be found in the [documentation file](/docs/project-organisation.md).
+The specific workflow followed in this project can be found in this [documentation file](/docs/project-organisation.md).
