@@ -32,9 +32,10 @@ For this project, multiple files in **JSON** format (1.42 GB) containing climate
 - Data from 2018 and 2023 is not complete for the entire year, given the project's duration. Therefore, while it was utilized for monthly historical analysis, it was not represented on any Atlas map.
 <br>
 
-<img src="sample_images/docs.jpg" width="40" height="40" alt="Icon" style="vertical-align: middle;"/> 
-
-## Project Organization
+<h2>
+  <img src="sample_images/docs.jpg" width="25" height="25" alt="Icon" style="vertical-align: middle;"/> 
+  <span style="vertical-align: middle;">Project Organization</span>
+</h2>
 The project can be divided into six distinct steps.
 <br>
 
