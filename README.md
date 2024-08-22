@@ -27,7 +27,7 @@ For this project, multiple files in **JSON** format (1.42 GB) containing climate
 <br>
 <br>
 <div align="center">
-  <img src="sample_images/project_overlay.jpg" width="95%" height="100%" alt="Schematic process">
+  <img src="sample_images/project_overlay.jpg" width="100%" height="100%" alt="Schematic process">
   <br>
   <sub>Schematic process</sub>
 </div>
