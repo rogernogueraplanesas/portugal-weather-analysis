@@ -77,8 +77,9 @@ def get_coordinates(database):
     return cursor.fetchall()
 
 
-#Save fetched station data into a CSV file to then import it based on their coordinates into QGIS
+#Save stations data into a CSV file to import it into QGIS
 def save_to_csv(data, filename):
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
     with open(filename, 'w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(['id_estacao', 'latitude', 'longitude', 'local_estacao'])

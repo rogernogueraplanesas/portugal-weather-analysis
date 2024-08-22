@@ -1,7 +1,14 @@
 import csv
+import os
 
-#Cleaning imported csv file with Portugal continental stations data
+# The data imported from QGIS has all the already known data for each weather station + 'dicofre' and 'concelho'.
+    
+# The CSV files from QGIS must be reduced to only 3 values per row: idestacao (station id // PRIMARY KEY), dicofre (location code) and concelho (municipality).
+
+
+#Cleaning qgis imported csv file with Portugal continental stations data
 def clean_portugal_data(raw_file, clean_file):
+    os.makedirs(os.path.dirname(clean_file), exist_ok=True)
     with open(raw_file, 'r', encoding='utf-8') as input_file, open(clean_file, 'w', newline='', encoding='utf-8') as output_file:
         reader = csv.reader(input_file)
         writer = csv.writer(output_file)
@@ -15,8 +22,9 @@ def clean_portugal_data(raw_file, clean_file):
             writer.writerow([row[0], dicofre, row[6]])
 
 
-#Cleaning imported csv file with Madeira stations data
+#Cleaning qgis imported csv file with Madeira stations data
 def clean_madeira_data(raw_file, clean_file):
+    os.makedirs(os.path.dirname(clean_file), exist_ok=True)
     with open(raw_file, 'r', encoding='utf-8') as input_file, open(clean_file, 'w', newline='', encoding='utf-8') as output_file:
         reader = csv.reader(input_file)
         writer = csv.writer(output_file)
@@ -30,8 +38,9 @@ def clean_madeira_data(raw_file, clean_file):
             writer.writerow([row[0], dicofre, row[6]])
 
 
-#Cleaning imported csv file with Açores Central stations data
+#Cleaning qgis imported csv file with Açores Central stations data
 def clean_açores_central_data(raw_file, clean_file):
+    os.makedirs(os.path.dirname(clean_file), exist_ok=True)
     with open(raw_file, 'r', encoding='utf-8') as input_file, open(clean_file, 'w', newline='', encoding='utf-8') as output_file:
         reader = csv.reader(input_file)
         writer = csv.writer(output_file)
@@ -45,8 +54,9 @@ def clean_açores_central_data(raw_file, clean_file):
             writer.writerow([row[0], dicofre, row[6]])
 
 
-#Cleaning imported csv file with Açores Occidental stations data
+#Cleaning qgis imported csv file with Açores Occidental stations data
 def clean_açores_occidental_data(raw_file, clean_file):
+    os.makedirs(os.path.dirname(clean_file), exist_ok=True)
     with open(raw_file, 'r', encoding='utf-8') as input_file, open(clean_file, 'w', newline='', encoding='utf-8') as output_file:
         reader = csv.reader(input_file)
         writer = csv.writer(output_file)
@@ -60,8 +70,9 @@ def clean_açores_occidental_data(raw_file, clean_file):
             writer.writerow([row[0], dicofre, row[6]])
 
 
-#Cleaning imported csv file with Açores Oriental stations data
+#Cleaning qgis imported csv file with Açores Oriental stations data
 def clean_açores_oriental_data(raw_file, clean_file):
+    os.makedirs(os.path.dirname(clean_file), exist_ok=True)
     with open(raw_file, 'r', encoding='utf-8') as input_file, open(clean_file, 'w', newline='', encoding='utf-8') as output_file:
         reader = csv.reader(input_file)
         writer = csv.writer(output_file)

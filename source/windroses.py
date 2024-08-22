@@ -6,12 +6,9 @@ import numpy as np
 
 #________________________________________________________________________YEARLY WINDROSES________________________________________________________________________
 
-def create_yearly_windrose():
-
-    file_path = "csv_files\\windrose_csv_data\\wind_data_yearly.csv"
-
+def create_yearly_windrose(csv_path):
     # Read the CSV data using the updated file path
-    data = pd.read_csv(file_path, header=None, skiprows=1, names=['Year', 'Id_Estacao', 'dicofre', 'Concelho', 'Direction', 'Min', 'Max', 'Average'], encoding='utf-8')
+    data = pd.read_csv(csv_path, header=None, skiprows=1, names=['Year', 'Id_Estacao', 'dicofre', 'Concelho', 'Direction', 'Min', 'Max', 'Average'], encoding='utf-8')
 
     direction_mapping = {
         1.0: 0,
@@ -97,12 +94,9 @@ def create_yearly_windrose():
 
 #________________________________________________________________________MONTHLY WINDROSES________________________________________________________________________
 
-def create_monthly_windrose():
-
-    file_path = "csv_files\\windrose_csv_data\\wind_data_monthly.csv"
-
+def create_monthly_windrose(csv_path):
     # Read the CSV data using the updated file path
-    data = pd.read_csv(file_path, header=None, skiprows=1, names=['Month', 'Id_Estacao', 'dicofre', 'Concelho', 'Direction', 'Min', 'Max', 'Average'], encoding='utf-8')
+    data = pd.read_csv(csv_path, header=None, skiprows=1, names=['Month', 'Id_Estacao', 'dicofre', 'Concelho', 'Direction', 'Min', 'Max', 'Average'], encoding='utf-8')
 
     direction_mapping = {
         1.0: 0,
@@ -203,12 +197,9 @@ def create_monthly_windrose():
 
 #________________________________________________________________________YEAR AND MONTH WINDROSES________________________________________________________________________
 
-def create_year_month_windrose():
-
-    file_path = "csv_files\\windrose_csv_data\\wind_data_year_month.csv"
-
+def create_year_month_windrose(csv_path):
     # Read the CSV data using the updated file path
-    data = pd.read_csv(file_path, header=None, skiprows=1, names=['Month', 'Year', 'Id_Estacao', 'dicofre', 'Concelho', 'Direction', 'Min', 'Max', 'Average'], encoding='utf-8')
+    data = pd.read_csv(csv_path, header=None, skiprows=1, names=['Month', 'Year', 'Id_Estacao', 'dicofre', 'Concelho', 'Direction', 'Min', 'Max', 'Average'], encoding='utf-8')
 
     direction_mapping = {
         1.0: 0,
@@ -314,13 +305,9 @@ def create_year_month_windrose():
 
 #________________________________________________________________________WINDROSE TESTING________________________________________________________________________
 
-def create_test_windrose():
-
-    # Path to a shortened CSV file to test the code before processing the final CSV files
-    file_path = "csv_files\\windrose_csv_data\\windrose_test.csv"
-
+def create_test_windrose(csv_path):
     # Read the CSV data using the updated file path
-    data = pd.read_csv(file_path, header=None, skiprows=1, names=['Month', 'Year', 'Id_Estacao', 'dicofre', 'Concelho', 'Direction', 'Min', 'Max', 'Average'], encoding='utf-8')
+    data = pd.read_csv(csv_path, header=None, skiprows=1, names=['Month', 'Year', 'Id_Estacao', 'dicofre', 'Concelho', 'Direction', 'Min', 'Max', 'Average'], encoding='utf-8')
 
     direction_mapping = {
         1.0: 0,

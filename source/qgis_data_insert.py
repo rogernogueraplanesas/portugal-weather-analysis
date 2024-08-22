@@ -1,6 +1,7 @@
 import csv
 import tables_queries as tq
 
+
 #Add dicofre and concelho columns in stations table
 def add_columns(database):
     cursor = database.cursor()
@@ -9,21 +10,16 @@ def add_columns(database):
     database.commit()
 
 
-#----------------------------------------------------------------------------------------------
-#In case it is needed, both columns can be removed
+#--------------------------------------------------
+# IN CASE OF NEEDING TO REMOVE THE NEW COLUMNS:
+#--------------------------------------------------
 def drop_columns(database):
     cursor = database.cursor()
     cursor.execute(tq.DROP_DICOFRE_COLUMN)
     cursor.execute(tq.DROP_CONCELHO_COLUMN)
     database.commit()
-#----------------------------------------------------------------------------------------------
-
-#>>>>>>>> The data imported from QGIS has all the already known data for each weather station + 'dicofre' and 'concelho'.
-    
-#>>>>>>>> The CSV files from QGIS must be reduced to only 3 values per row: idestacao (station id // PRIMARY KEY), dicofre (zip code) and concelho (municipality).
-    
-#>>>>>>>> In the script 'qgis_data_cleaning.py', each imported CSV file from QGIS is cleaned to obtain a cleaned CSV to work with (qgis_cleaned folder). Now 'dicofre' and 'concelho' can be added to the db.
-    
+#--------------------------------------------------
+ 
 
 #Add 'dicofre' and 'concelho' values per each 'Portugal continental' station into the stations table
 def add_portugal_data(database, cleaned_file):
