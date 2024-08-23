@@ -54,6 +54,7 @@ The specific workflow followed in this project can be found in the [documentatio
 <br>
 
 
+
 <h2>
   <img src="sample_images/assumption.png" width="25" height="25" alt="Icon" style="vertical-align: middle;"/> 
   <span style="vertical-align: middle;">Instructions</span>
