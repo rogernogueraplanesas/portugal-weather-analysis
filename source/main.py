@@ -1,5 +1,5 @@
 import sqlite3
-import create_fill_db as cf
+import fill_db_extract as cf
 import qgis_data_clean as qgis_c
 import qgis_data_insert as qgis_i
 import wind_data_extract as wd
