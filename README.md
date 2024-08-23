@@ -22,8 +22,6 @@ pip install -r requirements.txt
 
 [Folders and files](#folders-and-files)
 
-[Schematic process](#schematic-process)
-
 [Project Assumptions](#project-assumptions)
 
 [Project Workflow](#project-workflow)
@@ -32,7 +30,7 @@ pip install -r requirements.txt
 
 <br>
 
-<h2>
+<h2 id="summary">
   <img src="sample_images/summary.jpg" width="25" height="25" alt="Icon" style="vertical-align: middle;"/> 
   <span style="vertical-align: middle;">Summary</span>
 </h2>
@@ -54,7 +52,7 @@ For this project, multiple JSON files (1.42 GB) containing climate data recorded
 <br>
 
 
-<h2>
+<h2 id="project-assumptions">
   <img src="sample_images/assumption.png" width="25" height="25" alt="Icon" style="vertical-align: middle;"/> 
   <span style="vertical-align: middle;">Project Assumptions</span>
 </h2>
@@ -65,7 +63,7 @@ For this project, multiple JSON files (1.42 GB) containing climate data recorded
 <br>
 
 
-<h2>
+<h2 id="project-workflow">
   <img src="sample_images/postinstall.jpg" width="25" height="25" alt="Icon" style="vertical-align: middle;"/> 
   <span style="vertical-align: middle;">Project Workflow</span>
 </h2>
@@ -74,7 +72,7 @@ The specific workflow followed in this project can be found in the [documentatio
 <br><br>
 
 
-<h2>
+<h2 id="instruccions">
   <img src="sample_images/execution.png" width="25" height="26" alt="Icon" style="vertical-align: middle;"/> 
   <span style="vertical-align: middle;">Instructions</span>
 </h2>
