@@ -59,10 +59,10 @@ The specific workflow followed in this project can be found in the [documentatio
   <span style="vertical-align: middle;">Instructions</span>
 </h2>
 
-The execution of this program is divided into two phases: **before** the QGIS data transformation and **after** importing the merged data files.<br>
+The execution of this program is divided into two phases: **before** the QGIS data transformation and **after** importing the merged data files.<br><br>
+
 First, navigate to the project's folder using the *cd* command.<br>
 Before running the script, ensure that only the Pre-QGIS functions are active in *main.py* script. This means to comment out the Post-QGIS functions.<br>
-<br>
 In the main.py script, modify the code as follows:
 
 ```
