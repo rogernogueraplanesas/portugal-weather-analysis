@@ -26,7 +26,7 @@ pip install -r requirements.txt
 
 [Project Workflow](#project-workflow)
 
-[Instruccions](#instruccions)
+[Instructions](#instructions)
 
 <br>
 
@@ -35,7 +35,8 @@ pip install -r requirements.txt
   <span style="vertical-align: middle;">Summary</span>
 </h2>
 
-For this project, multiple JSON files (1.42 GB) containing climate data recorded by various weather stations across Portugal (Mainland and Islands) from 2018 to 2023 were processed by extracting the necessary data and inserting it into a database. Additional data from external sources was then used to complete the database, from which a final dataset was extracted to generate CSV files for wind roses by month, year, and a combined (month + year) basis. These CSV files were later used to create a set of Atlas maps.
+For this project, multiple **JSON files** (1.42 GB) containing climate data recorded by various weather stations across Portugal (Mainland and Islands) from **2018 to 2023** were processed by extracting the necessary data and inserting it into a new **database**.<br>
+Additional geodata from **external sources** was then used to complete the database, from which final datasets were extracted as **CSV files** in order to create wind roses by month, year, and a combined (month + year) basis. These wind roses were later used to create sets of Atlas maps.
 
 > SQLite for the database creation.
 
@@ -71,7 +72,7 @@ For this project, multiple JSON files (1.42 GB) containing climate data recorded
 
 **[source](/source)**: Includes all the .py files.
   - **fill_db_extract.py**: Script to create the db, extract important data from the data source (JSON files), fill the db, and extract specific metadata from the stations in a single CSV ('stations_pre_qgis' folder).
-  - **main.py**: Script with the main code of the program. *Script to be executed by the user, as explained in [Instruccions](#instruccions).
+  - **main.py**: Script with the main code of the program. *Script to be executed by the user, as explained in [Instructions](#instructions).
   - **qgis_data_clean.py**: Script to clean the raw CSV files obtained after the merging process by means of QGIS.
   - **qgis_data_insert.py**: Script to add new columns into the db and fill them with clean QGIS data for each station. Database completion.
   - **settings.py**: Script with the required utilities.
@@ -106,7 +107,7 @@ The specific workflow followed in this project can be found in the [documentatio
 <br><br>
 
 
-<h2 id="instruccions">
+<h2 id="instructions">
   <img src="sample_images/execution.png" width="25" height="26" alt="Icon" style="vertical-align: middle;"/> 
   <span style="vertical-align: middle;">Instructions</span>
 </h2>
