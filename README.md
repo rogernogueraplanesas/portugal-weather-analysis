@@ -17,6 +17,7 @@ pip install -r requirements.txt
   <img src="sample_images/toc.jpg" width="25" height="25" alt="Icon" style="vertical-align: middle;"/> 
   <span style="vertical-align: middle;">Table of Contents</span>
 </h2>
+
 [Summary](#summary)
 
 [Folders and files](#folders-and-files)
