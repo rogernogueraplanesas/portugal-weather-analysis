@@ -83,4 +83,5 @@ if __name__=="__main__":
     create_insert_dicofre_concelho()
     get_wind_data()
     create_windroses()
+#___________________________________________________________________
     database.close()
