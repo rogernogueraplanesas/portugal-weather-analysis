@@ -56,7 +56,7 @@ The specific workflow followed in this project can be found in the [documentatio
 
 
 <h2>
-  <img src="sample_images/execution.png" width="25" height="25" alt="Icon" style="vertical-align: middle;"/> 
+  <img src="sample_images/execution.png" width="30" height="30" alt="Icon" style="vertical-align: middle;"/> 
   <span style="vertical-align: middle;">Instructions</span>
 </h2>
 
@@ -95,6 +95,7 @@ if __name__=="__main__":
 python source/main.py
 ```
 <br>
+
 - This step will insert selected data from the JSON files into a new SQLite database, from which specific stations' metadata will be exported in CSV format into the [stations' data pre-qgis folder](/csv_files/stations_pre_qgis).<br>
 - An intersection process between the stations' data and external geographical information must be done by means of QGIS, as explained in the [documentation](/docs/project-organisation.md).<br>
 - The resulting files must adhere to the structure defined in the [qgis imported folder](/csv_files/qgis_imported) to ensure smooth continuation of the process.<br><br>
@@ -121,6 +122,7 @@ if __name__=="__main__":
     database.close()
 ```
 <br>
+
 - Execute the script again using the same command:
 
 ```
