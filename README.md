@@ -1,9 +1,8 @@
 <br>
-<div align="center">
+<div align="lest">
   <img src="sample_images/windrose_logo.png" width="20%" height="20%" alt="Schematic process">
   <br>
 </div>
-
 
 # Portugal Weather Analysis
 ![Static Badge](https://img.shields.io/badge/language-python-blue) ![GitHub repo size](https://img.shields.io/github/repo-size/:rogernogueraplanesas/:portugal-weather-analysis) ![GitHub last commit](https://img.shields.io/github/last-commit/:rogernogueraplanesas/:portugal-weather-analysis) <br>
