@@ -58,32 +58,31 @@ For this project, multiple JSON files (1.42 GB) containing climate data recorded
   <span style="vertical-align: middle;">Folders and files</span>
 </h2>
 
-**[csv_files](/csv_files)**: 
-  - **[qgis_cleaned](/csv_files/qgis_cleaned)**: 
-  - **[qgis_imported](/csv_files/qgis_cleaned)**: 
-  - **[stations_pre_qgis](/csv_files/qgis_cleaned)**: 
-  - **[windrose_csv_data](/csv_files/qgis_cleaned)**: 
+**[csv_files](/csv_files)**: Folder containing sets of CSV files generated during the project.
+  - **[qgis_cleaned](/csv_files/qgis_cleaned)**: Folder containing a clean version of the CSV files imported from QGIS after the merging process.
+  - **[qgis_imported](/csv_files/qgis_cleaned)**: Folder containing the resulting CSV files after mergining the weather stations' metadata and the external (QGIS) geodata.
+  - **[stations_pre_qgis](/csv_files/stations_pre_qgis)**: Folder with a single CSV file containing all weather stations' metadata
+  - **[windrose_csv_data](/csv_files/windrose_csv_data)**: Folder containing clean prepared weather data to produce the final wind roses.
 
-**[docs](/docs)**: 
-  - **project-organisation.md**: 
+**[docs](/docs)**: Folder for documentation.
+  - **project-organisation.md**: Document describing step by step the process followed along the project. (Important to read)
 
-**[sample_images](/sample_images)**: 
+**[sample_images](/sample_images)**: Folder containing images used in the repository.
 
-**[source](/source)**: 
-  - **fill_db_extract.py**: 
-  - **main.py**: 
-  - **qgis_data_clean.py**: 
-  - **qgis_data_insert.py**: 
-  - **settings.py**: 
-  - **table_queries.py**: 
-  - **wind_data_extract.py**: 
-  - **windroses.py**:
+**[source](/source)**: Includes all the .py files.
+  - **fill_db_extract.py**: Script to create the db, extract important data from the data source (JSON files), fill the db, and extract specific metadata from the stations in a single CSV ('stations_pre_qgis' folder).
+  - **main.py**: Script with the main code of the program. *Script to be executed by the user, as explained in [Instruccions](#instruccions).
+  - **qgis_data_clean.py**: Script to clean the raw CSV files obtained after the merging process by means of QGIS.
+  - **qgis_data_insert.py**: Script to add new columns into the db and fill them with clean QGIS data for each station. Database completion.
+  - **settings.py**: Script with the required utilities.
+  - **table_queries.py**: Script containing all the SQL queries used along the project.
+  - **wind_data_extract.py**: Script to retrieve data from the completed database and generate CSV files with data to produce the final wind roses (according to the required temporality).
+  - **windroses.py**: Script to generate the final set of wind roses.
 <br>
 
 **Other files**:
-- **.gitignore**: 
-- **requirements.txt**: 
-- **README.md**: 
+- **.gitignore**: Specifies the files that are present in the local repository but not in the remote version.
+- **requirements.txt**: Needed libraries to execute the program. *It is important to have them all installed.*
   
 <br>
 
