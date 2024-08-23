@@ -45,12 +45,46 @@ For this project, multiple JSON files (1.42 GB) containing climate data recorded
 
 <br>
 <div align="center">
-  <img src="sample_images/project_overlay.jpg" width="100%" height="100%" alt="Schematic process">
+  <img src="sample_images/project_overlay.jpg" width="100%" height="100%" alt="Project Workflow">
   <br>
   <sub>Project Workflow</sub>
 </div>
 <br>
 
+<br>
+
+<h2 id="folders-and-files">
+  <img src="sample_images/docs.jpg" width="25" height="25" alt="Icon" style="vertical-align: middle;"/> 
+  <span style="vertical-align: middle;">Folders and files</span>
+</h2>
+
+**[csv_files](/csv_files)**: 
+  - **[qgis_cleaned](/csv_files/qgis_cleaned)**: 
+  - **[qgis_imported](/csv_files/qgis_cleaned)**: 
+  - **[stations_pre_qgis](/csv_files/qgis_cleaned)**: 
+  - **[windrose_csv_data](/csv_files/qgis_cleaned)**: 
+
+**[docs](/docs)**: 
+  - **project-organisation.md**: 
+
+**[sample_images](/sample_images)**: 
+
+**[source](/source)**: 
+  - **create_fill_db.py**: 
+  - **main.py**: 
+  - **qgis_data_clean.py**: 
+  - **qgis_data_insert.py**: 
+  - **settings.py**: 
+  - **table_queries.py**: 
+  - **wind_data_extract.py**: 
+  - **windroses.py**: 
+
+**Other files**:
+  - **.gitignore**: 
+  - **requirements.txt**: 
+  - **README.md**: 
+  
+<br>
 
 <h2 id="project-assumptions">
   <img src="sample_images/assumption.png" width="25" height="25" alt="Icon" style="vertical-align: middle;"/> 
