@@ -56,7 +56,7 @@ The specific workflow followed in this project can be found in the [documentatio
 
 
 <h2>
-  <img src="sample_images/execution.png" width="30" height="30" alt="Icon" style="vertical-align: middle;"/> 
+  <img src="sample_images/execution.png" width="25" height="25" alt="Icon" style="vertical-align: middle;"/> 
   <span style="vertical-align: middle;">Instructions</span>
 </h2>
 
