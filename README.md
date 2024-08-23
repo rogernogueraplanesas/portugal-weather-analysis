@@ -18,8 +18,6 @@ pip install -r requirements.txt
   <span style="vertical-align: middle;">Summary</span>
 </h2>
 
-For this project, multiple files in **JSON** format (1.42 GB) containing climate data from 2018 to 2023 registered by different weather stations in Portugal (Mainland and Islands), were cleaned, formatted, and transformed into **CSV** files in order to create proper wind roses per municipality on a yearly, monthly, and yearly + monthly basis.s A set of Atlas maps was created using the resulting wind roses.
-
 For this project, multiple JSON files (1.42 GB) containing climate data recorded by various weather stations across Portugal (Mainland and Islands) from 2018 to 2023 were processed by extracting the necessary data and inserting it into a database. Additional data from external sources was then used to complete the database, from which a final dataset was extracted to generate CSV files for wind roses by month, year, and a combined (month + year) basis. These CSV files were later used to create a set of Atlas maps.
 
 > SQLite for the database creation.
