@@ -1,10 +1,9 @@
 <br>
 <div align="center">
-  <img src="sample_images/windrose_logo.png" width="40%" height="40%" alt="Schematic process">
+  <img src="sample_images/windrose_logo.png" width="20%" height="20%" alt="Schematic process">
   <br>
-  <sub>Project Workflow</sub>
 </div>
-<br>
+
 
 # Portugal Weather Analysis
 ![Static Badge](https://img.shields.io/badge/language-python-blue) ![GitHub repo size](https://img.shields.io/github/repo-size/:rogernogueraplanesas/:portugal-weather-analysis) ![GitHub last commit](https://img.shields.io/github/last-commit/:rogernogueraplanesas/:portugal-weather-analysis) <br>
