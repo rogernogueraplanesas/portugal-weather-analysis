@@ -44,6 +44,7 @@ For this project, multiple files in **JSON** format (1.42 GB) containing climate
 - Data from 2018 and 2023 is not complete for the entire year, given the project's duration. Therefore, while it was utilized for monthly historical analysis, it was not represented on any Atlas map.
 <br>
 
+
 <h2>
   <img src="sample_images/postinstall.jpg" width="25" height="25" alt="Icon" style="vertical-align: middle;"/> 
   <span style="vertical-align: middle;">Project Organisation</span>
@@ -58,7 +59,7 @@ The specific workflow followed in this project can be found in the [documentatio
   <span style="vertical-align: middle;">Instructions</span>
 </h2>
 
-The execution for this program is divided by two steps, one before the QGIS data transformation and another right after importing the merged datafiles.
+The execution for this program is divided by two steps, one before the QGIS data transformation and another right after importing the merged datafiles.<br>
 Once the 'cd' is set to be the project's folder, the next step would be to deactivate the following functions before running any script.<br>
 In the 'main.py' script, comment out the 'POST-QGIS' set of functions:<br><br>
 
