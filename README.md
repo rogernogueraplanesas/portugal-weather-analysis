@@ -62,7 +62,7 @@ The specific workflow followed in this project can be found in the [documentatio
 
 The execution of this program is divided into two phases: **before** the QGIS data transformation and **after** importing the merged data files.<br>
 - First, navigate to the project's folder using the *cd* command.<br>
-- Before running the script, ensure that only the Pre-QGIS functions are active in *main.py* script. Comment out the Post-QGIS functions.<br>
+- Before running the script, ensure that only the Pre-QGIS functions are active in *'main.py'* script. Comment out the Post-QGIS functions.<br>
 - In the main.py script, modify the code as follows:
 
 
@@ -88,19 +88,16 @@ if __name__=="__main__":
 ```
 <br>
 
-Run the following command to execute the **Pre-QGIS phase**:
+- Run the following command to execute the **Pre-QGIS phase**:
 
 
 ```
 python source/main.py
 ```
-<br>
-
-
-- This step will generate new station data and export it to the [stations' data pre-qgis folder](/csv_files/stations_pre_qgis).<br>
-- An intersection process must be done by means of QGIS.<br>
-- The resulting files must adhere to the structure defined in the [qgis imported folder](/csv_files/qgis_imported) to ensure smooth continuation of the process.<br>
-- Once the QGIS transformation is completed, modify the main.py script again to activate the Post-QGIS functions:<br>
+This step will insert selected data from the JSON files into a new SQLite database, from which specific stations' metadata will be exported in CSV format into the [stations' data pre-qgis folder](/csv_files/stations_pre_qgis).<br>
+An intersection process between the stations' data and external geographical information must be done by means of QGIS, as explained in the [documentation](/docs/project-organisation.md).<br>
+The resulting files must adhere to the structure defined in the [qgis imported folder](/csv_files/qgis_imported) to ensure smooth continuation of the process.<br><br>
+- Once the QGIS transformation is completed, modify the main.py script again to activate the Post-QGIS functions:
 
 ```
 if __name__=="__main__":
