@@ -47,7 +47,7 @@ For this project, multiple files in **JSON** format (1.42 GB) containing climate
 
 <h2>
   <img src="sample_images/postinstall.jpg" width="25" height="25" alt="Icon" style="vertical-align: middle;"/> 
-  <span style="vertical-align: middle;">Project Organisation</span>
+  <span style="vertical-align: middle;">Project Workflow</span>
 </h2>
 
 The specific workflow followed in this project can be found in the [documentation file](/docs/project-organisation.md).
