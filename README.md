@@ -1,6 +1,6 @@
 <br>
 <div align="center">
-  <img src="sample_images/windrose_logo.png" width="100%" height="100%" alt="Schematic process">
+  <img src="sample_images/windrose_logo.png" width="40%" height="40%" alt="Schematic process">
   <br>
   <sub>Project Workflow</sub>
 </div>
