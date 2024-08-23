@@ -36,7 +36,7 @@ For this project, multiple JSON files (1.42 GB) containing climate data recorded
 
 
 <h2>
-  <img src="sample_images/assumption.png" width="25" height="25" alt="Icon" style="vertical-align: middle;"/> 
+  <img src="sample_images/assumption.png" width="25" height="28" alt="Icon" style="vertical-align: middle;"/> 
   <span style="vertical-align: middle;">Project Assumptions</span>
 </h2>
 
