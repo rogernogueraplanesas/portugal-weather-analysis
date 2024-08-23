@@ -79,10 +79,10 @@ For this project, multiple JSON files (1.42 GB) containing climate data recorded
   - **wind_data_extract.py**: 
   - **windroses.py**: 
 
-**Other files**:
-  - **.gitignore**: 
-  - **requirements.txt**: 
-  - **README.md**: 
+*Other files*:
+- **.gitignore**: 
+- **requirements.txt**: 
+- **README.md**: 
   
 <br>
 
