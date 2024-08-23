@@ -59,12 +59,11 @@ The specific workflow followed in this project can be found in the [documentatio
   <span style="vertical-align: middle;">Instructions</span>
 </h2>
 
-The execution of this program is divided into two phases: **before** the QGIS data transformation and **after** importing the merged data files.<br><br>
-
+The execution of this program is divided into two phases: **before** the QGIS data transformation and **after** importing the merged data files.<br>
 First, navigate to the project's folder using the *cd* command.<br>
-Before running the script, ensure that only the Pre-QGIS functions are active in *main.py* script. This means to comment out the Post-QGIS functions.<br>
+Before running the script, ensure that only the Pre-QGIS functions are active in *main.py* script. Comment out the Post-QGIS functions.<br>
 In the main.py script, modify the code as follows:
-
+<br>
 ```
 if __name__=="__main__":
 
@@ -85,14 +84,12 @@ if __name__=="__main__":
 #___________________________________________________________________
     database.close()
 ```
-
+<br>
 Run the following command to execute the **Pre-QGIS phase**:
-
+<br>
 ```
 python source/main.py
 ```
-<br>
-
 <br>
 This step will generate new station data and export it to the [stations' data pre-qgis folder](/csv_files/stations_pre_qgis).<br>
 An intersection process must be done by means of QGIS. The resulting files must adhere to the structure defined in the [qgis imported folder](/csv_files/qgis_imported) to ensure smooth continuation of the process.
@@ -120,12 +117,11 @@ if __name__=="__main__":
 #___________________________________________________________________
     database.close()
 ```
-
+<br>
 Execute the script again using the same command:
-
+<br>
 ```
 python source/main.py
 ```
 <br>
-
 This will complete the **Post-QGIS phase** and finalize the process.
