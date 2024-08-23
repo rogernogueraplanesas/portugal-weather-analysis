@@ -70,7 +70,7 @@ For this project, multiple JSON files (1.42 GB) containing climate data recorded
 **[sample_images](/sample_images)**: 
 
 **[source](/source)**: 
-  - **create_fill_db.py**: 
+  - **fill_db_extract.py**: 
   - **main.py**: 
   - **qgis_data_clean.py**: 
   - **qgis_data_insert.py**: 
