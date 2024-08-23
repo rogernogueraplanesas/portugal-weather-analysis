@@ -14,6 +14,24 @@ pip install -r requirements.txt
 <br>
 
 <h2>
+  <img src="sample_images/toc.jpg" width="25" height="25" alt="Icon" style="vertical-align: middle;"/> 
+  <span style="vertical-align: middle;">Table of Contents</span>
+</h2>
+[Summary](#summary)
+
+[Folders and files](#folders-and-files)
+
+[Schematic process](#schematic-process)
+
+[Project Assumptions](#project-assumptions)
+
+[Project Workflow](#project-workflow)
+
+[Instruccions](#instruccions)
+
+<br>
+
+<h2>
   <img src="sample_images/summary.jpg" width="25" height="25" alt="Icon" style="vertical-align: middle;"/> 
   <span style="vertical-align: middle;">Summary</span>
 </h2>
