@@ -3,7 +3,7 @@ The project can be divided into six main steps.
 <br>
 
 ### 1. Database structuring, and preliminary data insertion
-The raw data source consists of several JSON files divided into two main groups: one containing metadata related to the involved Portuguese weather stations, and the other containing data related to hourly observations made by the weather stations between 2018 and 2023.
+The raw data source consists of several **JSON files** divided into two main groups: one containing metadata related to the involved Portuguese weather stations, and the other containing data related to hourly observations made by the weather stations between 2018 and 2023.
 
 The first step of the project consisted on the creation of two different tables inside a new locally stored SQLite database named `weather.db`.
 The table containing stations' data was named `stations`, and the one containing records from each station was named `observations`.
@@ -31,7 +31,7 @@ With both tables filled out with data, there were two more key parameters missin
 For this project, it was crucial to locate the stations in a specific *'concelho'* (municipality) with their respective *'dicofre'* code.<br>
 The final windroses are created based on each concelho found in Portugal. The dicofre number is a key code representing a unique combination of *'distrito'* (district) + *'concelho'* (municipality) + *'freguesia'* (parish); moreover, it is useful for organizational purposes, as the resulting windroses will be easier to locate, group or filter.
 
-All the data inside the `stations` table was retrieved and fetched into a CSV file that was imported into QGIS.
+All the data inside the `stations` table was retrieved and fetched into a **CSV file** that was imported into QGIS.
 
 QGIS is involved in the relational part, where each station gets a concelho name and dicofre value as a result of their geocoordinates.
 <br>
@@ -52,7 +52,7 @@ For each station, one point would be represented on the map according to their g
 </div>
 <br>
 
-Once imported, the new points layer (stations' data) and the QGIS project's multipolygon layer were merged by means of the 'intersection' tool from QGIS, which intersects two selected layers creating a new one containing all of their data combined. This new layer's information was then exported as a new CSV file to work with.
+Once imported, the new points layer (stations' data) and the QGIS project's multipolygon layer were merged by means of the 'intersection' tool from QGIS, which intersects two selected layers creating a new one containing all of their data combined. This new layer's information was then exported as a new **CSV file** to work with.
 
 > [!NOTE]
 > Both the multipolygonal layers and the imported points layer were using the `EPSG:4326 - WGS 84` Coordinate Reference System (CRS).
@@ -71,7 +71,7 @@ Two new columns were created, and the values for the concelho and dicofre per st
 <br>
 
 ### 5. Retrieving wind data and plotting the final windroses
-By means of an inner join, data from both stations and observations table is retrieved in order to collect the required information needed to plot windroses per concelho on a yearly, monthly, and yearly + monthly basis.<br>
+By means of an inner join, data from both stations and observations table is retrieved in several **CSV files** in order to collect and group the required information needed to plot windroses per concelho on a yearly, monthly, and yearly + monthly basis.<br>
 An example of a query written to obtain yearly wind data is shown next:
 
 ```ruby
@@ -115,7 +115,7 @@ The resultant windroses presented the following appearance:<br>
 
 
 ### 6. Atlas maps
-For company purposes, the final wind roses were included in a set of atlas maps that showed the monthly and annual variation of the wind in each municipality during the period of time studied. The final composition of the maps is seen in the following images:
+For company purposes, the final wind roses were included in a set of atlas maps that showed the monthly and annual variation of the wind in each municipality during the period of time studied. This process is completely done by means of QGIS. The final composition of the maps is seen in the following images:
 
 <br>
 <div align="center">
