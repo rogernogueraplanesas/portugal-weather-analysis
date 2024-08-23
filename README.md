@@ -86,6 +86,7 @@ if __name__=="__main__":
     database.close()
 ```
 <br>
+
 Run the following command to execute the **Pre-QGIS phase**:
 <br>
 
@@ -128,4 +129,5 @@ Execute the script again using the same command:
 python source/main.py
 ```
 <br>
+
 This will complete the **Post-QGIS phase** and finalize the process.
