@@ -51,8 +51,7 @@ For this project, multiple files in **JSON** format (1.42 GB) containing climate
 </h2>
 
 The specific workflow followed in this project can be found in the [documentation file](/docs/project-organisation.md).
-<br>
-
+<br><br>
 
 
 <h2>
@@ -60,9 +59,11 @@ The specific workflow followed in this project can be found in the [documentatio
   <span style="vertical-align: middle;">Instructions</span>
 </h2>
 
-The execution for this program is divided by two steps, one before the QGIS data transformation and another right after importing the merged datafiles.<br>
-Once the 'cd' is set to be the project's folder, the next step would be to deactivate the following functions before running any script.<br>
-In the 'main.py' script, comment out the 'POST-QGIS' set of functions:<br><br>
+The execution of this program is divided into two phases: **before** the QGIS data transformation and **after** importing the merged data files.<br>
+First, navigate to the project's folder using the *cd* command.<br>
+Before running the script, ensure that only the Pre-QGIS functions are active in *main.py* script. This means to comment out the Post-QGIS functions.<br>
+<br>
+In the main.py script, modify the code as follows:
 
 ```
 if __name__=="__main__":
@@ -85,7 +86,7 @@ if __name__=="__main__":
     database.close()
 ```
 
-Now, it is possible to proceed with the **first execution step**.
+Run the following command to execute the **Pre-QGIS phase**:
 
 ```
 python source/main.py
@@ -93,11 +94,11 @@ python source/main.py
 <br>
 
 <br>
-Using the new retrieved stations' data stored in the [stations' data pre-qgis folder](/csv_files/stations_pre_qgis), the intersecting process must be done by means of QGIS.<br>
-The data obtained from this process must have the same structure as the files shown in the [qgis imported folder](/csv_files/qgis_imported) for the next procedures to correclty proceed.
+This step will generate new station data and export it to the [stations' data pre-qgis folder](/csv_files/stations_pre_qgis).<br>
+An intersection process must be done by means of QGIS. The resulting files must adhere to the structure defined in the [qgis imported folder](/csv_files/qgis_imported) to ensure smooth continuation of the process.
 <br>
 
-Before the **second execution step**, the commented lines must be altered again:<br><br>
+Once the QGIS transformation is completed, modify the main.py script again to activate the Post-QGIS functions:<br><br>
 
 ```
 if __name__=="__main__":
@@ -120,10 +121,11 @@ if __name__=="__main__":
     database.close()
 ```
 
-The same command is run:
+Execute the script again using the same command:
 
 ```
 python source/main.py
 ```
 <br>
 
+This will complete the **Post-QGIS phase** and finalize the process.
