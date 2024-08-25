@@ -60,10 +60,10 @@ Additional geodata from **external sources** was then used to complete the datab
 </h2>
 
 **[csv_files](/csv_files)**: Folder containing sets of CSV files generated during the project.
-  - **[qgis_cleaned](/csv_files/qgis_cleaned)**: Folder containing a clean version of the CSV files imported from QGIS after the merging process.
-  - **[qgis_imported](/csv_files/qgis_cleaned)**: Folder containing the resulting CSV files after mergining the weather stations' metadata and the external (QGIS) geodata.
-  - **[stations_pre_qgis](/csv_files/stations_pre_qgis)**: Folder with a single CSV file containing all weather stations' metadata
-  - **[windrose_csv_data](/csv_files/windrose_csv_data)**: Folder containing clean prepared weather data to produce the final wind roses.
+  - **[qgis_cleaned](/csv_files/qgis_cleaned)**: AUTOMATICALLY GENERATED ALONG THE EXECUTION. Folder containing a clean version of the CSV files imported from QGIS after the merging process.
+  - **[qgis_imported](/csv_files/qgis_cleaned)**: **MANUALLY FILL WITH CSV FROM QGIS.** Folder containing the resulting CSV files after mergining the weather stations' metadata and the external (QGIS) geodata.
+  - **[stations_pre_qgis](/csv_files/stations_pre_qgis)**: AUTOMATICALLY GENERATED ALONG THE EXECUTION. Folder with a single CSV file containing all weather stations' metadata
+  - **[windrose_csv_data](/csv_files/windrose_csv_data)**: AUTOMATICALLY GENERATED ALONG THE EXECUTION. Folder containing clean prepared weather data to produce the final wind roses.
 
 **[docs](/docs)**: Folder for documentation.
   - **project-organisation.md**: Document describing step by step the process followed along the project. (Important to read)
@@ -79,7 +79,12 @@ Additional geodata from **external sources** was then used to complete the datab
   - **table_queries.py**: Script containing all the SQL queries used along the project.
   - **wind_data_extract.py**: Script to retrieve data from the completed database and generate CSV files with data to produce the final wind roses (according to the required temporality).
   - **windroses.py**: Script to generate the final set of wind roses.
-<br>
+
+**month_windroses/**: AUTOMATICALLY GENERATED ALONG THE EXECUTION. Folder containing the resulting monthly based wind roses per concelho.
+
+**year_windroses/**: AUTOMATICALLY GENERATED ALONG THE EXECUTION. Folder containing the resulting yearly based wind roses per concelho.
+
+**year_month_windroses/**: AUTOMATICALLY GENERATED ALONG THE EXECUTION. Folder containing the resulting monthly+yearly based wind roses per concelho.
 
 **Other files**:
 - **.gitignore**: Specifies the files that are present in the local repository but not in the remote version.
