@@ -3,10 +3,6 @@ import json
 import csv
 import tables_queries as tq
 
-
-#________________________Functions used in the main script________________________
-
-
 #Create the tables in the database
 def create_tables(database):
     cursor = database.cursor() 
