@@ -60,10 +60,10 @@ Additional geodata from **external sources** was then used to complete the datab
 </h2>
 
 **[csv_files](/csv_files)**: Folder containing sets of CSV files generated during the project.
-  - **[qgis_cleaned](/csv_files/qgis_cleaned)**: AUTOMATICALLY GENERATED ALONG THE EXECUTION. Folder containing a clean version of the CSV files imported from QGIS after the merging process.
+  - **[qgis_cleaned]**: AUTOMATICALLY GENERATED ALONG THE EXECUTION. Folder containing a clean version of the CSV files imported from QGIS after the merging process.
   - **[qgis_imported](/csv_files/qgis_cleaned)**: **MANUALLY FILL BY THE USER WITH CSV FROM QGIS.** Folder containing the resulting CSV files after mergining the weather stations' metadata and the external (QGIS) geodata.
-  - **[stations_pre_qgis](/csv_files/stations_pre_qgis)**: AUTOMATICALLY GENERATED ALONG THE EXECUTION. Folder with a single CSV file containing all weather stations' metadata
-  - **[windrose_csv_data](/csv_files/windrose_csv_data)**: AUTOMATICALLY GENERATED ALONG THE EXECUTION. Folder containing clean prepared weather data to produce the final wind roses.
+  - **[stations_pre_qgis]**: AUTOMATICALLY GENERATED ALONG THE EXECUTION. Folder with a single CSV file containing all weather stations' metadata
+  - **[windrose_csv_data]**: AUTOMATICALLY GENERATED ALONG THE EXECUTION. Folder containing clean prepared weather data to produce the final wind roses.
 
 **[docs](/docs)**: Folder for documentation.
   - **project-organisation.md**: Document describing step by step the process followed along the project. (Important to read)
@@ -156,7 +156,7 @@ python source/main.py
 - This step will insert selected data from the JSON files into a new SQLite database, from which specific stations' metadata will be exported in CSV format into the [stations' data pre-qgis folder](/csv_files/stations_pre_qgis).<br>
 - An intersection process between the stations' data and external geographical information must be done by means of QGIS, as explained in the [documentation](/docs/project-organisation.md).<br>
 - The resulting files must adhere to the structure defined in the [qgis imported folder](/csv_files/qgis_imported) to ensure smooth continuation of the process.<br>
-- **IMPORTANT**: Move the new generated CSV files from QGIS into [qgis_imported](/csv_files/qgis_cleaned) in order to proceed with the execution of the program.
+- **IMPORTANT**: Move the new generated CSV files from QGIS into [qgis_imported](csv_files/qgis_imported/) in order to proceed with the execution of the program.
 - Once the QGIS step is completed and the new files are placed into their corresponding folder, modify the main.py script again to activate the Post-QGIS functions:
 
 ```
