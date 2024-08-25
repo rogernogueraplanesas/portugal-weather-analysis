@@ -156,7 +156,7 @@ python source/main.py
 - This step will insert selected data from the JSON files into a new SQLite database, from which specific stations' metadata will be exported in CSV format into the [stations' data pre-qgis folder](/csv_files/stations_pre_qgis).<br>
 - An intersection process between the stations' data and external geographical information must be done by means of QGIS, as explained in the [documentation](/docs/project-organisation.md).<br>
 - The resulting files must adhere to the structure defined in the [qgis imported folder](/csv_files/qgis_imported) to ensure smooth continuation of the process.<br>
-- Move the new generated CSV files from QGIS into [qgis_imported](/csv_files/qgis_cleaned) in order to proceed with the execution of the program.
+- **IMPORTANT**: Move the new generated CSV files from QGIS into [qgis_imported](/csv_files/qgis_cleaned) in order to proceed with the execution of the program.
 - Once the QGIS step is completed and the new files are placed into their corresponding folder, modify the main.py script again to activate the Post-QGIS functions:
 
 ```
