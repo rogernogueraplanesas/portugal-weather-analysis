@@ -72,7 +72,7 @@ Additional geodata from **external sources** was then used to complete the datab
 
 **[source](/source)**: Includes all the .py files.
   - **fill_db_extract.py**: Script to create the db, extract important data from the data source (JSON files), fill the db, and extract specific metadata from the stations in a single CSV ('stations_pre_qgis' folder).
-  - **main.py**: Script with the main code of the program. *Script to be executed by the user, as explained in [Instructions](#instructions).
+  - **main.py**: Script with the main code of the program. *Script to be executed by the user, as explained in [Instructions](#instructions).*
   - **qgis_data_clean.py**: Script to clean the raw CSV files obtained after the merging process by means of QGIS.
   - **qgis_data_insert.py**: Script to add new columns into the db and fill them with clean QGIS data for each station. Database completion.
   - **settings.py**: Script with the required utilities.
