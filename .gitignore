@@ -155,6 +155,9 @@ cython_debug/
 
 # Raw data, venv, db and generated images (windroses)
 data_20231002/
+csv_files/stations_pre_qgis/
+csv_files/qgis_cleaned/
+csv_files/windrose_csv_data/
 final_Atlas_maps/
 month_windroses/
 year_windroses/
