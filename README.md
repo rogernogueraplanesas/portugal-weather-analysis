@@ -41,7 +41,7 @@ Additional geodata from **external sources** was then used to complete the datab
 > SQLite for the database creation.
 
 > QGIS is used throughout this project.<br>
-> Also known as Quantum GIS, is a geographic information system (GIS) software. More information can be found [here](https://qgis.org/en/site/about/index.html).
+> Also known as Quantum GIS, is a geographic information system (GIS) software. More information [here](https://qgis.org/en/site/about/index.html).
 
 
 <br>
