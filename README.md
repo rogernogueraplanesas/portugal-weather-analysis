@@ -61,7 +61,7 @@ Additional geodata from **external sources** was then used to complete the datab
 
 **[csv_files](/csv_files)**: Folder containing sets of CSV files generated during the project.
   - **qgis_cleaned**: *AUTOMATICALLY GENERATED ALONG THE EXECUTION*. Folder containing a clean version of the CSV files imported from QGIS after the merging process.
-  - **qgis_imported**: ***MANUALLY FILL BY THE USER*** Pre-existing folder used to contain the resulting CSV files generated after mergining the weather stations' metadata and the external geodata by means of QGIS. Key step before running the second phase of the execution.
+  - **qgis_imported**: ***MANUALLY FILL BY THE USER***. Pre-existing folder used to contain the resulting CSV files generated after mergining the weather stations' metadata and the external geodata by means of QGIS. Key step before running the second phase of the execution.
   - **stations_pre_qgis**: *AUTOMATICALLY GENERATED ALONG THE EXECUTION*. Folder with a single CSV file containing all weather stations' metadata
   - **windrose_csv_data**: *AUTOMATICALLY GENERATED ALONG THE EXECUTION*. Folder containing clean prepared weather data to produce the final wind roses.
 
