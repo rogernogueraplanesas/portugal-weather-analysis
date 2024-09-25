@@ -35,7 +35,7 @@ pip install -r requirements.txt
   <span style="vertical-align: middle;">Summary</span>
 </h2>
 
-For this project, multiple **JSON files** (1.42 GB) containing climate data recorded by various weather stations across Portugal (Mainland and Islands) from **2018 to 2023** were processed by extracting the necessary data and inserting it into a new **database**.<br>
+For this project, multiple **JSON files** (1.42 GB) containing raw climate data recorded by various weather stations across Portugal (Mainland and Islands) from **2018 to 2023** were processed by extracting the necessary data and inserting it into a new **database**.<br>
 Additional geodata from **external sources** was then used to complete the database, from which final datasets were extracted as **CSV files** in order to create wind roses by month, year, and a combined (month + year) basis. These wind roses were later used to create sets of Atlas maps.
 
 > SQLite for the database creation.
