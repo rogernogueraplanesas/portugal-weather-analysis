@@ -11,7 +11,7 @@ Wind roses and Atlas maps generator per municipality for Historical Hourly Wind 
 ```
 pip install -r requirements.txt
 ```
-It is recommended to set up a virtual environment (venv) first.
+> It is recommended to set up a virtual environment (venv) first.
 <br>
 
 <h2>
