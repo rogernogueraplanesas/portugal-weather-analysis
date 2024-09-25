@@ -128,6 +128,7 @@ ENV/
 env.bak/
 venv.bak/
 venv_app
+weather_venv_new/
 
 # Spyder project settings
 .spyderproject
@@ -157,10 +158,14 @@ cython_debug/
 data_20231002/
 csv_files/stations_pre_qgis/
 csv_files/qgis_cleaned/
+csv_files/qgis_imported/stations_intersected_açores_central.csv
+csv_files/qgis_imported/stations_intersected_açores_occidental.csv
+csv_files/qgis_imported/stations_intersected_açores_oriental.csv
+csv_files/qgis_imported/stations_intersected_madeira.csv
+csv_files/qgis_imported/stations_intersected_portugal_continental.csv
 csv_files/windrose_csv_data/
 final_Atlas_maps/
 month_windroses/
 year_windroses/
 year_month_windroses/
-weather_venv_new/
 weather.db
