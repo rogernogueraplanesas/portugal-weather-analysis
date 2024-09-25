@@ -11,6 +11,7 @@ Wind roses and Atlas maps generator per municipality for Historical Hourly Wind 
 ```
 pip install -r requirements.txt
 ```
+> It is recommended to set up a virtual environment (venv) first.
 <br>
 
 <h2>
@@ -35,13 +36,13 @@ pip install -r requirements.txt
   <span style="vertical-align: middle;">Summary</span>
 </h2>
 
-For this project, multiple **JSON files** (1.42 GB) containing climate data recorded by various weather stations across Portugal (Mainland and Islands) from **2018 to 2023** were processed by extracting the necessary data and inserting it into a new **database**.<br>
+For this project, multiple **JSON files** (1.42 GB) containing raw climate data recorded by various weather stations across Portugal (Mainland and Islands) from **2018 to 2023** were processed by extracting the necessary data and inserting it into a new **database**.<br>
 Additional geodata from **external sources** was then used to complete the database, from which final datasets were extracted as **CSV files** in order to create wind roses by month, year, and a combined (month + year) basis. These wind roses were later used to create sets of Atlas maps.
 
 > SQLite for the database creation.
 
 > QGIS is used throughout this project.<br>
-> Also known as Quantum GIS, is a geographic information system (GIS) software. More information can be found [here](https://qgis.org/en/site/about/index.html).
+> Also known as Quantum GIS, is a geographic information system (GIS) software. More information [here](https://qgis.org/en/site/about/index.html).
 
 
 <br>
@@ -61,7 +62,7 @@ Additional geodata from **external sources** was then used to complete the datab
 
 **[csv_files](/csv_files)**: Folder containing sets of CSV files generated during the project.
   - **qgis_cleaned**: *AUTOMATICALLY GENERATED ALONG THE EXECUTION*. Folder containing a clean version of the CSV files imported from QGIS after the merging process.
-  - **qgis_imported(/csv_files/qgis_imported)**: ***MANUALLY FILL BY THE USER*** Pre-existing folder used to contain the resulting CSV files generated after mergining the weather stations' metadata and the external geodata by means of QGIS. Key step before running the second phase of the execution.
+  - **qgis_imported**: ***MANUALLY FILL BY THE USER***. Pre-existing folder used to contain the resulting CSV files generated after mergining the weather stations' metadata and the external geodata by means of QGIS. Key step before running the second phase of the execution.
   - **stations_pre_qgis**: *AUTOMATICALLY GENERATED ALONG THE EXECUTION*. Folder with a single CSV file containing all weather stations' metadata
   - **windrose_csv_data**: *AUTOMATICALLY GENERATED ALONG THE EXECUTION*. Folder containing clean prepared weather data to produce the final wind roses.
 
