@@ -1,5 +1,5 @@
 # RAW DATA PATH----------------------------------------------------------------------------------
-raw_json_data = "data_20231002/"
+raw_json_data = "data_20231002/data/"
 
 # STATIONS EXPORTED CSV--------------------------------------------------------------------------
 stations_data_filename = "csv_files/stations_pre_qgis/stations_csv.csv"
