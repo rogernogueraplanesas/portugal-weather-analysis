@@ -119,12 +119,12 @@ The specific workflow followed in this project can be found in the [documentatio
 </h2>
 
 > [!IMPORTANT]
-> This repository contains no real data due to a non-disclosure agreement. Instead, it includes dummy files that replicate the real structure.
+> This repository contains **no real data** due to a non-disclosure agreement. Instead, it includes dummy files that replicate the real structure.
 > Please ensure to remove the **'test_'** prefix from the folder names *test_data_20231002/* and *test_csv_files* folders.
 
 > [!NOTE]
-> The folder *data_20231002/* contains only two files, representing one for each file type (observation data and station metadata). As previously mentioned, in the actual scenario, there should be thousands of such files.
-> The *test_csv_files* folder contains exactly five files, which are expected after the QGIS intersection process. Only a small portion of the information is visible.
+> The folder *data_20231002/* contains only two files, **representing one for each file type** (observation data and station metadata). As previously mentioned, in the actual scenario, there should be thousands of such files.
+> The *test_csv_files* folder contains exactly **five files**, which are expected after the QGIS intersection process. Only a small portion of their information is visible.
 
 The execution of this program is divided into two phases: **before** the QGIS data transformation and **after** importing the merged data files.<br>
 - First, navigate to the project's folder using the *cd* command.<br>
