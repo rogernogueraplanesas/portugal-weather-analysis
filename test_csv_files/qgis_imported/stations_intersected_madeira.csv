@@ -1,0 +1,7 @@
+id_estacao,latitude,longitude,local_esta,fid,DICO,Concelho,Ilha,N_Freguesi,NUTSIII,NUTSII,NUTSI,Alt_Max,Alt_Min,Area_ha,Perim_km
+"520",30.140595000000001,-15.869153000000001,Ilhas selvagens,10,"3103",Funchal,Ilha da Madeira (Madeira),10,Região Autónoma da Madeira,Região Autónoma da Madeira,Região Autónoma da Madeira,1818,0,7622.189999999999600,84
+"521",32.696880000000000,-16.776119999999999,Santa Catarina (Aeroporto),11,"3108",Santa Cruz,Ilha da Madeira (Madeira),5,Região Autónoma da Madeira,Região Autónoma da Madeira,Região Autónoma da Madeira,1415,0,8131.029999999999745,106
+"522",32.647860000000001,-16.888000000000002,Funchal,10,"3103",Funchal,Ilha da Madeira (Madeira),10,Região Autónoma da Madeira,Região Autónoma da Madeira,Região Autónoma da Madeira,1818,0,7622.189999999999600,84
+"524",33.074029000000003,-16.348680000000002,Porto Santo,1,"3201",Porto Santo,Ilha de Porto Santo (Madeira),1,Região Autónoma da Madeira,Região Autónoma da Madeira,Região Autónoma da Madeira,517,0,4268.210000000000036,107
+
+# Incomplete sample of data IMPORTED FROM QGIS

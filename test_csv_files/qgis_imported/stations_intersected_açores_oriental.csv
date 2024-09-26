@@ -1,0 +1,10 @@
+id_estacao,latitude,longitude,local_esta,fid,DICO,Concelho,Ilha,N_Freguesi,NUTSIII,NUTSII,NUTSI,Alt_Max,Alt_Min,Area_ha,Perim_km
+"512",37.744140000000002,-25.695304799999999,P. Delgada (Aeroporto),3,"4203",Ponta Delgada,Ilha de São Miguel,24,Região Autónoma dos Açores,Região Autónoma dos Açores,Região Autónoma dos Açores,873,0,23298.650000000001455,102
+"513",37.746400000000001,-25.662282999999999,P. Delgada (Obs. A. Chaves),3,"4203",Ponta Delgada,Ilha de São Miguel,24,Região Autónoma dos Açores,Região Autónoma dos Açores,Região Autónoma dos Açores,873,0,23298.650000000001455,102
+"515",36.967174999999997,-25.167899999999999,Santa Maria (Aeroporto),6,"4101",Vila do Porto,Ilha de Santa Maria,5,Região Autónoma dos Açores,Região Autónoma dos Açores,Região Autónoma dos Açores,587,0,9688.739999999999782,78
+"932",37.832560000000001,-25.150107999999999,"S. Miguel, Nordeste",2,"4202",Nordeste,Ilha de São Miguel,9,Região Autónoma dos Açores,Região Autónoma dos Açores,Região Autónoma dos Açores,1103,0,10146.799999999999272,53
+"1200512",37.744140000000002,-25.695304799999999,P. Delgada (Aeródromo),3,"4203",Ponta Delgada,Ilha de São Miguel,24,Região Autónoma dos Açores,Região Autónoma dos Açores,Região Autónoma dos Açores,873,0,23298.650000000001455,102
+"1200515",36.967174999999997,-25.167899999999999,Santa Maria (Aeródromo),6,"4101",Vila do Porto,Ilha de Santa Maria,5,Região Autónoma dos Açores,Região Autónoma dos Açores,Região Autónoma dos Açores,587,0,9688.739999999999782,78
+"1210513",37.746400000000001,-25.662282999999999,P. Delgada (Obs. A. Chaves),3,"4203",Ponta Delgada,Ilha de São Miguel,24,Região Autónoma dos Açores,Região Autónoma dos Açores,Região Autónoma dos Açores,873,0,23298.650000000001455,102
+
+# Incomplete sample of data IMPORTED FROM QGIS

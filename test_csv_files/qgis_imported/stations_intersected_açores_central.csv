@@ -1,0 +1,8 @@
+id_estacao,latitude,longitude,local_esta,fid,DICO,Concelho,Ilha,N_Freguesi,NUTSIII,NUTSII,NUTSI,Alt_Max,Alt_Min,Area_ha,Perim_km
+"504",38.552190000000003,-28.441369999999999,Pico (Aeródromo),5,"4602",Madalena,Ilha do Pico,6,Região Autónoma dos Açores,Região Autónoma dos Açores,Região Autónoma dos Açores,2351,0,14712.329999999999927,65
+"506",38.540781000000003,-28.632249999999999,Horta (Obs. Principe Alberto),3,"4701",Horta,Ilha do Faial,13,Região Autónoma dos Açores,Região Autónoma dos Açores,Região Autónoma dos Açores,1043,0,17305.529999999998836,80
+"507",39.090359999999997,-28.028520000000000,Graciosa (Aeródromo),7,"4401",Santa Cruz da Graciosa,Ilha da Graciosa,4,Região Autónoma dos Açores,Região Autónoma dos Açores,Região Autónoma dos Açores,402,0,6065.779999999999745,44
+"511",38.665943499999997,-27.216567000000001,Angra do Heroísmo,1,"4301",Angra do Heroísmo,Ilha Terceira,19,Região Autónoma dos Açores,Região Autónoma dos Açores,Região Autónoma dos Açores,1021,0,23899.659999999999854,105
+"1200504",38.552190000000003,-28.441369999999999,Pico (Aeródromo),5,"4602",Madalena,Ilha do Pico,6,Região Autónoma dos Açores,Região Autónoma dos Açores,Região Autónoma dos Açores,2351,0,14712.329999999999927,65
+
+# Incomplete sample of data IMPORTED FROM QGIS

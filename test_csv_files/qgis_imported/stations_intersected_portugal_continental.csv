@@ -1,0 +1,12 @@
+id_estacao,latitude,longitude,local_esta,fid,DICO,Concelho,Distrito,N_Freguesi,NUTSIII,NUTSII,NUTSI,Alt_Max,Alt_Min,Area_ha,Perim_km
+"533",37.012835000000003,-8.949089000000004,Sagres,116,"0815",Vila do Bispo,Faro,36,Algarve,Algarve,Continente,156,0,17906.060000000001310,97
+"535",38.719077779999999,-9.149722219999999,Lisboa (Geofísico),152,"1106",Lisboa,Lisboa,24,Área Metropolitana de Lisboa,Lisboa,Continente,228,0,10005.430000000000291,50
+"541",37.954504000000000,-8.838271000000002,Sines,225,"1513",Sines,Setúbal,26,Alentejo Litoral,Alentejo,Continente,250,0,20330.169999999998254,112
+"545",41.233502000000001,-8.681331999999999,"Porto, P.Rubras",184,"1308",Matosinhos,Porto,4,Área Metropolitana do Porto,Norte,Continente,134,0,6241.970000000000255,59
+"546",41.138519400000000,-8.602499999999999,"Porto, Serra do Pilar",192,"1317",Vila Nova de Gaia,Porto,15,Área Metropolitana do Porto,Norte,Continente,262,0,16846.430000000000291,77
+"548",40.150069440000003,-8.466691669999999,Coimbra (Aeródromo),73,"0603",Coimbra,Coimbra,19,Região de Coimbra,Centro,Continente,500,9,31939.939999999998690,137
+"551",41.648874999999997,-8.804606000000000,"Viana Castelo, Chafé",232,"1609",Viana do Castelo,Viana do Castelo,27,Alto Minho,Norte,Continente,823,0,31902.009999999998399,98
+"554",37.016579000000000,-7.971953000000000,Faro (Aeroporto),106,"0805",Faro,Faro,4,Algarve,Algarve,Continente,410,0,20256.790000000000873,98
+"558",38.533363889999997,-7.883380560000000,Évora (Aeródromo),92,"0705",Évora,Évora,12,Alentejo Central,Alentejo,Continente,441,150,130707.580000000001746,300
+
+# Incomplete sample of data IMPORTED FROM QGIS
